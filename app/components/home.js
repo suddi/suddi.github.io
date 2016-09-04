@@ -27,7 +27,6 @@ const Home = React.createClass({
         axios
             .get(this.props.route.resume)
             .then(function (response) {
-                console.log(response);
                 this.setState({
                     resume: response.data
                 });
@@ -35,7 +34,6 @@ const Home = React.createClass({
     },
 
     render: function () {
-        console.log(this.state);
         if (this.state.resume) {
             return (
                 <div>

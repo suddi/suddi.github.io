@@ -1,13 +1,14 @@
 'use strict';
 
 const path = require('path');
+const webpack = require('webpack');
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-    template: path.join(__dirname, '/index.html'),
-    filename: 'index.html',
-    inject: 'body'
-});
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
+//     template: path.join(__dirname, '/index.html'),
+//     filename: 'index.html',
+//     inject: 'body'
+// });
 
 module.exports = {
     target: 'web',
@@ -33,11 +34,6 @@ module.exports = {
                 query: {
                     presets: ['react']
                 }
-            },
-
-            {
-                test: /\.json$/,
-                loader: 'json-loader'
             }
         ],
 
@@ -45,17 +41,17 @@ module.exports = {
     },
 
     plugins: [
-        HTMLWebpackPluginConfig
+        // HTMLWebpackPluginConfig
         // new webpack.optimize.DedupePlugin(),
         // new webpack.optimize.OccurenceOrderPlugin()
-        // new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}})
+        new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}})
     ],
 
     resolve: {
         modulesDirectories: [
             'node_modules'
         ],
-        extensions: ['', '.js', '.json']
+        extensions: ['', '.js']
     },
 
     resolveLoader: {
