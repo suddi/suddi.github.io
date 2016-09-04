@@ -1,0 +1,58 @@
+{
+  "name": "suddi.github.io",
+  "private": true,
+  "description": "Sudharshan Ravindran personal site",
+  "version": "1.0.0",
+  "homepage": "",
+  "author": {
+    "name": "Sudharshan Ravindran",
+    "email": "suddir@gmail.com",
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suddi/suddi.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/suddi/suddi.github.io/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://github.com/suddi/suddi.github.io/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 4.2.3",
+    "npm": ">= 2.14.7"
+  },
+  "scripts": {
+    "bundle": "webpack -p",
+    "lint": "eslint .",
+    "prepush": "npm run lint",
+    "setup": ". ./setup.sh",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "axios": "^0.14.0",
+    "react": "^15.0.0",
+    "react-addons-css-transition-group": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-router": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "eslint": "^2.4.0",
+    "eslint-config-suddi": "^1.0.0",
+    "eslint-plugin-react": "^4.2.1",
+    "html-webpack-plugin": "^2.22.0",
+    "husky": "^0.11.3",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "eslintConfig": {
+    "extends": "suddi/frontend"
+  }
+}

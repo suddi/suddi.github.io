@@ -1,37 +1,94 @@
 {
     "basics": {
-        "name": "John Doe",
-        "label": "Programmer",
-        "picture": "",
-        "email": "john@gmail.com",
-        "phone": "(912) 555-4321",
-        "website": "http://johndoe.com",
-        "summary": "A summary of John Doe...",
+        "name": "Sudharshan Ravindran",
+        "label": "Software Engineer",
+        "picture": "https://s.gravatar.com/avatar/30784287b4fe80b4a5d687076f0393cc?s=180",
+        "email": "suddir@gmail.com",
+        "phone": "+852 51998799",
+        "website": "https://suddi.github.io/",
+        "summary": "",
         "location": {
-            "address": "2712 Broadway St",
-            "postalCode": "CA 94115",
-            "city": "San Francisco",
-            "countryCode": "US",
-            "region": "California"
+            "address": "",
+            "postalCode": "",
+            "city": "Kowloon",
+            "countryCode": "HKG",
+            "region": ""
         },
         "profiles": [
             {
-                "network": "Twitter",
-                "username": "john",
-                "url": "http://twitter.com/john"
+                "network": "LinkedIn",
+                "username": "suddi",
+                "url": "https://hk.linkedin.com/in/suddi"
+            },
+            {
+                "network": "GitHub",
+                "username": "suddi",
+                "url": "https://github.com/suddi"
             }
         ]
     },
     "work": [
         {
-            "company": "Company",
-            "position": "President",
-            "website": "http://company.com",
-            "startDate": "2013-01-01",
-            "endDate": "2014-01-01",
-            "summary": "Description...",
+            "company": "AfterShip Limited",
+            "position": "Senior Software Engineer",
+            "website": "https://www.aftership.com/",
+            "startDate": "2015-04-08",
+            "endDate": "Present",
+            "summary": "Tsuen Wan, Hong Kong",
             "highlights": [
-                "Started the company"
+                "Involved in the development of a new product for the company from the beginning, building primarily the workers to interface with various Web Services, and the RESTful API for the product.",
+                "Led a team of up-to 9 developers to maintain and extend the product as Tech Lead/Scrum Master.",
+                "Performed Product Manager duties and was responsible for development scheduling and product delivery."
+            ]
+        },
+        {
+            "company": "The University of Hong Kong",
+            "position": "Researcher",
+            "website": "http://www.hku.hk/",
+            "startDate": "2013-03-01",
+            "endDate": "2013-12-31",
+            "summary": "Pok Fu Lam, Hong Kong",
+            "highlights": [
+                "Conducted literary research into potential psychophysical experiments in the area of human perception and developed the infrastructure using one of C++/Python/MATLAB and OpenGL 4.1, depending on the complexity and requirements of the task.",
+                "Built a general experiment engine in Python and OpenGL to create 3D vision experiments, with GUI interface for participant data collection."
+            ]
+        },
+        {
+            "company": "Demand Analytics Limited",
+            "position": "Software Engineer",
+            "website": "http://www.demandanalytics.com/",
+            "startDate": "2011-09-01",
+            "endDate": "2013-02-28",
+            "summary": "Sheung Wan, Hong Kong",
+            "highlights": [
+                "Managed a small team to meet milestone requirements extending the company’s real-time group-buying data collection infrastructure, handling an hourly volume of 100,000+ database entries.",
+                "Wrote an automated and manual Microsoft Excel based data entry updater in Python for client and internal use to amend all chronological entries pertaining to deals in the relevant collections within the Mongo database.",
+                "Supervised and reviewed developments to the data collection system and deployed updates nightly.",
+                "Built a daily cron-instigated Python console application to export the previous day’s data in Microsoft Excel for review by the analyst team.",
+                "Extended the Scrapy data gathering system, adding a templating tool to fit the company’s necessities and quicken crawler development allowing for outsourcing.",
+                "Maintained and further appended the company’s data collection, monitoring and Django-based dashboard infrastructure."
+            ]
+        },
+        {
+            "company": "eSolutions Limited",
+            "position": "Web Applications Developer Intern",
+            "website": "",
+            "startDate": "2010-10-01",
+            "endDate": "2010-12-31",
+            "summary": "Central, Hong Kong",
+            "highlights": [
+                "Helped design innovative corporate web solutions for e-commerce enterprises, in addition to maintenance work for the company’s existing systems."
+            ]
+        },
+        {
+            "company": "Universal Enterprises (Pvt) Limited",
+            "position": "Web Applications Developer Intern",
+            "website": "http://www.universalresorts.com/",
+            "startDate": "2010-06-01",
+            "endDate": "2010-09-01",
+            "summary": "Malé, Maldives",
+            "highlights": [
+                "Built a personnel database web application in PHP from the ground up, to be used between the company and a local telecommunications operator to keep track of employees with company funded mobile phone services."
             ]
         }
     ],
@@ -50,14 +107,54 @@
     ],
     "education": [
         {
-            "institution": "University",
-            "area": "Software Development",
-            "studyType": "Bachelor",
-            "startDate": "2011-01-01",
-            "endDate": "2013-01-01",
-            "gpa": "4.0",
+            "institution": "The University of Hong Kong",
+            "area": "MSc. in Computer Science",
+            "studyType": "Masters",
+            "startDate": "2013-09-01",
+            "endDate": "2014-12-31",
+            "gpa": "Distinction",
             "courses": [
-                "DB1101 - Basic SQL"
+                "Smart Phone Applications Development",
+                "Financial Computing",
+                "User Interface Design and Development",
+                "Computation Intelligence and Machine Learning",
+                "Web Technologies",
+                "Data Mining",
+                "Analysis and Design in UML",
+                "Securities Transaction Banking",
+                "Computational Finance",
+                "Visualization and Visual Analytics"
+            ]
+        },
+        {
+            "institution": "The Hong Kong University of Science and Technology",
+            "area": "BEng. in Computer Science",
+            "studyType": "Bachelors",
+            "startDate": "2007-09-01",
+            "endDate": "2010-12-31",
+            "gpa": "Second Class Honours, Division I",
+            "courses": [
+                "Computer Graphics",
+                "Java Programming",
+                "Database Management Systems",
+                "Global Information Infrastructure and Policy",
+                "Design and Analysis of Algorithms",
+                "Operating Systems",
+                "Probability and Random Processes in Engineering",
+                "Discrete Mathematics",
+                "Linear Algebra",
+                "Internet Computing"
+            ]
+        },
+        {
+            "institution": "Simon Fraser University",
+            "area": "BEng. in Computer Science",
+            "studyType": "Bachelors",
+            "startDate": "2009-09-01",
+            "endDate": "2009-12-31",
+            "gpa": "",
+            "courses": [
+                "Software Engineering"
             ]
         }
     ],
