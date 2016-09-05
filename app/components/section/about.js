@@ -40,6 +40,7 @@ const About = React.createClass({
                                     </a>
                                 </p>
                             </div>
+                            {/*
                             <div className='columns download'>
                                 <p>
                                     <a href='#' className='button'>
@@ -48,6 +49,7 @@ const About = React.createClass({
                                     </a>
                                 </p>
                             </div>
+                            */}
                         </div>
                     </div>
                 </div>

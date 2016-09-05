@@ -20,7 +20,7 @@ const Entry = React.createClass({
                     <h3>{this.props.entry.company}</h3>
                     <p className='info'>
                         {this.props.entry.position}
-                        <span> &bull; </span>
+                        &nbsp;&bull;&nbsp;
                         <em className='date'>{startDate} - {endDate}</em>
                     </p>
                     <BulletPoints points={this.props.entry.highlights}/>
