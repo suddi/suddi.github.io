@@ -34,20 +34,20 @@ const Home = React.createClass({
     },
 
     render: function () {
-        if (this.state.resume) {
-            return (
-                <div>
-                    <img src={this.state.resume.basics.picture} alt={this.state.resume.basics.name} id='pic'/>
-                    <Contact basics={this.state.resume.basics}/>
-                    <Statement basics={this.state.resume.basics}/>
-                    <Content work={this.state.resume.work} education={this.state.resume.education}/>
-                </div>
-            );
-        } else {
+        if (!this.state.resume) {
             return (
                 <Loading/>
             );
         }
+
+        return (
+            <div>
+                <img src={this.state.resume.basics.picture} alt={this.state.resume.basics.name} id='pic'/>
+                <Contact basics={this.state.resume.basics}/>
+                <Statement basics={this.state.resume.basics}/>
+                <Content work={this.state.resume.work} education={this.state.resume.education}/>
+            </div>
+        );
     }
 });
 
