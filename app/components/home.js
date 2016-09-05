@@ -5,9 +5,11 @@ const PropTypes = React.PropTypes;
 
 const axios = require('axios');
 
-const Contact = require('./contact');
-const Statement = require('./statement');
-const Content = require('./content');
+const Header = require('./header');
+const Navigation = require('./navigation');
+const Banner = require('./banner');
+const ScrollDown = require('./scrolldown');
+const Section = require('./section');
 const Loading = require('./loading');
 
 const Home = React.createClass({
@@ -42,10 +44,15 @@ const Home = React.createClass({
 
         return (
             <div>
-                <img src={this.state.resume.basics.picture} alt={this.state.resume.basics.name} id='pic'/>
-                <Contact basics={this.state.resume.basics}/>
-                <Statement basics={this.state.resume.basics}/>
-                <Content work={this.state.resume.work} education={this.state.resume.education}/>
+                <Header>
+                    <Navigation/>
+                    <Banner basics={this.state.resume.basics}/>
+                    <ScrollDown/>
+                </Header>
+                <Section
+                    basics={this.state.resume.basics}
+                    work={this.state.resume.work}
+                    education={this.state.resume.education}/>
             </div>
         );
     }

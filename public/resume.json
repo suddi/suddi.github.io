@@ -2,9 +2,9 @@
     "basics": {
         "name": "Sudharshan Ravindran",
         "label": "Software Engineer",
-        "picture": "https://s.gravatar.com/avatar/30784287b4fe80b4a5d687076f0393cc?s=180",
+        "picture": "https://en.gravatar.com/userimage/26512730/73df4bffac8c6096302afb8406a319d1.jpg?size=200",
         "email": "suddir@gmail.com",
-        "phone": "+852 51998799",
+        "phone": "+85251998799",
         "website": "https://suddi.github.io/",
         "summary": "",
         "location": {
@@ -15,6 +15,16 @@
             "region": ""
         },
         "profiles": [
+            {
+                "network": "Phone",
+                "username": "",
+                "url": "skype:+85251998799"
+            },
+            {
+                "network": "Email",
+                "username": "suddir@gmail.com",
+                "url": "mailto:suddir@gmail.com"
+            },
             {
                 "network": "LinkedIn",
                 "username": "suddi",
