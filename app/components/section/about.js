@@ -6,7 +6,7 @@ const ResumePropTypes = require('../../prop_types/resume');
 
 const About = React.createClass({
     propTypes: {
-        content: ResumePropTypes.content
+        content: ResumePropTypes.basics
     },
 
     render: function () {
