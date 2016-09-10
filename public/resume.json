@@ -362,11 +362,11 @@
     ],
     "references": [
         {
-            "name": "John Erik Metcalf (Demand Analytics Limited)",
+            "name": "John Erik Metcalf:Founder:Demand Analytics Limited",
             "reference": "Sudharshan was one of our first hires at Demand Analytics and I'm glad we got him. He worked diligently and gave much of himself to the company. He's a sharp computer scientist with broad interests. He can be trusted with much responsibility and to adapt quickly."
         },
         {
-            "name": "Joel Pitt (Demand Analytics Limited)",
+            "name": "Joel Pitt:CTO:Demand Analytics Limited",
             "reference": "Sudharshan started working with Demand Analytics at the same time I joined the team. He quickly picked up Python despite not using it before, and is a reliable and conscientious developer. He confidently asks questions when specifications or plans are unclear, helping stimulate discussion when most crucial."
         }
     ]
