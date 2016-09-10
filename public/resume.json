@@ -31,9 +31,24 @@
                 "url": "https://hk.linkedin.com/in/suddi"
             },
             {
+                "network": "Quora",
+                "username": "Sudharshan Ravindran",
+                "url": "https://www.quora.com/profile/Sudharshan-Ravindran"
+            },
+            {
+                "network": "Stack Overflow",
+                "username": "suddi",
+                "url": "http://stackoverflow.com/users/2492324/suddi"
+            },
+            {
                 "network": "GitHub",
                 "username": "suddi",
                 "url": "https://github.com/suddi"
+            },
+            {
+                "network": "Docker",
+                "username": "suddi",
+                "url": "https://hub.docker.com/u/suddi/"
             }
         ]
     },
@@ -104,14 +119,39 @@
     ],
     "volunteer": [
         {
-            "organization": "Organization",
-            "position": "Volunteer",
-            "website": "http://organization.com/",
-            "startDate": "2012-01-01",
-            "endDate": "2013-01-01",
-            "summary": "Description...",
+            "organization": "Lions Clubs International",
+            "position": "Student Organizer and Helper",
+            "website": "",
+            "startDate": "2009-02-01",
+            "endDate": "2009-05-01",
+            "summary": "",
             "highlights": [
-                "Awarded 'Volunteer of the Month'"
+                "Participated in this community service initiative that allowed students to plan and execute our own service: Bring Moxi to the Society.",
+                "In the event, we prepared computers and helped kindergartners to create their very own Moxi drawings using a stylus.",
+                "These drawings were then printed onto customized e-cards which could be sent to parents and loved ones."
+            ]
+        },
+        {
+            "organization": "UNICEF",
+            "position": "Student Helper",
+            "website": "",
+            "startDate": "2002-01-01",
+            "endDate": "2004-11-01",
+            "summary": "",
+            "highlights": [
+                "Took donated food to rural settlements.",
+                "Educated under-privileged children on the dangers of HIV/AIDS."
+            ]
+        },
+        {
+            "organization": "Camphill Community",
+            "position": "Student Helper",
+            "website": "",
+            "startDate": "2004-02-01",
+            "endDate": "2005-11-01",
+            "summary": "",
+            "highlights": [
+                "Schooled children suffering from Down Syndrome on alternate weekends."
             ]
         }
     ],
@@ -170,51 +210,164 @@
     ],
     "awards": [
         {
-            "title": "Award",
-            "date": "2014-11-01",
-            "awarder": "Company",
-            "summary": "There is no spoon."
+            "title": "Dean's Award for Superior Achievement in Humanities Minor",
+            "date": "2010-12-01",
+            "awarder": "The Hong Kong University of Science and Technology",
+            "summary": "Awarded to students taking Humanities as a minor, and placing within the top 15% bracket in the programme."
+        },
+        {
+            "title": "The Joseph Lau Luen Hung Charitable Trust Scholarship",
+            "date": "2010-12-01",
+            "awarder": "The Hong Kong University of Science and Technology",
+            "summary": "Scholarship awarded by the Joseph Lau Luen Hung Charitable Trust to students excelling in their chosen majors."
+        },
+        {
+            "title": "The Computer Science and Engineering Department Scholarship",
+            "date": "2010-12-01",
+            "awarder": "The Hong Kong University of Science and Technology",
+            "summary": "Scholarship awarded by the Computer Science Department of The Hong Kong University of Science and Technology to students excelling in their chosen majors."
+        },
+        {
+            "title": "Green Challenge Student Project Competition",
+            "date": "2009-05-01",
+            "awarder": "Hang Seng Bank",
+            "summary": "Short-listed for the competition on the basis of a previous success with a project on eco-friendly alcohol and enzyme based batteries. Went on to consolidate a top 5 finish in the competition."
         }
     ],
     "publications": [
         {
-            "name": "Publication",
-            "publisher": "Company",
-            "releaseDate": "2014-10-01",
-            "website": "http://publication.com",
-            "summary": "Description..."
+            "name": "",
+            "publisher": "",
+            "releaseDate": "",
+            "website": "",
+            "summary": ""
         }
     ],
     "skills": [
         {
-            "name": "Web Development",
-            "level": "Master",
+            "name": "Node.js",
+            "level": "95",
             "keywords": [
-                "HTML",
-                "CSS",
-                "Javascript"
+                "programming",
+                "expressjs",
+                "koajs"
+            ]
+        },
+        {
+            "name": "Python",
+            "level": "85",
+            "keywords": [
+                "programming",
+                "django",
+                "scrapy"
+            ]
+        },
+        {
+            "name": "C++",
+            "level": "70",
+            "keywords": [
+                "programming"
+            ]
+        },
+        {
+            "name": "MATLAB",
+            "level": "70",
+            "keywords": [
+                "programming"
+            ]
+        },
+        {
+            "name": "Erlang",
+            "level": "60",
+            "keywords": [
+                "programming",
+                "cowboy"
+            ]
+        },
+        {
+            "name": "Java",
+            "level": "60",
+            "keywords": [
+                "programming"
+            ]
+        },
+        {
+            "name": "MongoDB",
+            "level": "70",
+            "keywords": [
+                "database",
+                "nosql"
+            ]
+        },
+        {
+            "name": "RethinkDB",
+            "level": "80",
+            "keywords": [
+                "database",
+                "nosql"
+            ]
+        },
+        {
+            "name": "MySQL",
+            "level": "70",
+            "keywords": [
+                "database",
+                "sql"
+            ]
+        },
+        {
+            "name": "PostgreSQL",
+            "level": "70",
+            "keywords": [
+                "database",
+                "sql"
             ]
         }
     ],
     "languages": [
         {
             "name": "English",
-            "level": "Native speaker"
+            "level": "100"
+        },
+        {
+            "name": "Tamil",
+            "level": "90"
         }
     ],
     "interests": [
         {
-            "name": "Wildlife",
-            "keywords": [
-                "Ferrets",
-                "Unicorns"
-            ]
+            "name": "Cosmology",
+            "keywords": []
+        },
+        {
+            "name": "Media Creation",
+            "keywords": []
+        },
+        {
+            "name": "New Technologies",
+            "keywords": []
+        },
+        {
+            "name": "Psychology",
+            "keywords": []
+        },
+        {
+            "name": "Startups",
+            "keywords": []
+        },
+        {
+            "name": "Spirituality",
+            "keywords": []
         }
     ],
     "references": [
         {
-            "name": "Jane Doe",
-            "reference": "Reference..."
+            "name": "John Erik Metcalf (Demand Analytics Limited)",
+            "reference": "Sudharshan was one of our first hires at Demand Analytics and I'm glad we got him. He worked diligently and gave much of himself to the company. He's a sharp computer scientist with broad interests. He can be trusted with much responsibility and to adapt quickly."
+        },
+        {
+            "name": "Joel Pitt (Demand Analytics Limited)",
+            "reference": "Sudharshan started working with Demand Analytics at the same time I joined the team. He quickly picked up Python despite not using it before, and is a reliable and conscientious developer. He confidently asks questions when specifications or plans are unclear, helping stimulate discussion when most crucial."
         }
     ]
 }

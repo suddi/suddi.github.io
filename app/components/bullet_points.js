@@ -14,7 +14,7 @@ const BulletPoints = React.createClass({
             <div>
                 {this.props.points.map(function (point, index) {
                     return (
-                        <p key={index}>
+                        <p key={index} className='point'>
                             <span>&bull; </span>
                             {point}
                         </p>

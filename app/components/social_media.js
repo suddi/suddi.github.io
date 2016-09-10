@@ -6,11 +6,22 @@ const PropTypes = React.PropTypes;
 const ResumePropTypes = require('../prop_types/resume');
 
 function mapIcon(social_media) {
+    const media = social_media.replace(/ /g, '-');
     switch (social_media) {
         case 'email':
-            return 'envelope';
+            return (
+                <i className={'fa fa-envelope'}></i>
+            );
+        case 'quora':
+            return (
+                <i className='fa fa-fw'>
+                    <strong className='fa-quora'>Q</strong>
+                </i>
+            );
         default:
-            return social_media;
+            return (
+                <i className={'fa fa-' + media}></i>
+            );
     }
 }
 
@@ -28,7 +39,7 @@ const SocialMedia = React.createClass({
                     return (
                         <li key={index}>
                             <a href={profile.url}>
-                                <i className={'fa fa-' + icon}></i>
+                                {icon}
                             </a>
                         </li>
                     );

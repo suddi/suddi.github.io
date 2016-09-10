@@ -3,17 +3,17 @@
 const path = require('path');
 const webpack = require('webpack');
 
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-//     template: path.join(__dirname, '/index.html'),
-//     filename: 'index.html',
-//     inject: 'body'
-// });
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
+    template: path.join(__dirname, '/index.html'),
+    filename: 'index.html',
+    inject: 'body'
+});
 
 module.exports = {
     target: 'web',
     cache: false,
-    debug: true,
+    debug: false,
     devtool: false,
 
     entry: [
@@ -22,6 +22,7 @@ module.exports = {
 
     output: {
         path: path.join(__dirname, 'public'),
+        publicPath: path.join(__dirname, 'public'),
         filename: 'bundle.js'
     },
 
@@ -41,9 +42,9 @@ module.exports = {
     },
 
     plugins: [
-        // HTMLWebpackPluginConfig
-        // new webpack.optimize.DedupePlugin(),
-        // new webpack.optimize.OccurenceOrderPlugin()
+        HTMLWebpackPluginConfig,
+        new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}})
     ],
 

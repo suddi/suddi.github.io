@@ -8,9 +8,9 @@ module.exports = {
     navigation_links: {
         home: 'Home',
         about: 'About',
-        resume: 'Resume'
+        resume: 'Resume',
         // works: 'Works',
-        // testimonials: 'Testimonials',
+        testimonials: 'References'
         // contact: 'Contact'
     }
 };

@@ -21,7 +21,8 @@ const Home = React.createClass({
 
     getInitialState: function () {
         return {
-            resume: false
+            resume: false,
+            currentSection: 'home'
         };
     },
 
@@ -33,6 +34,12 @@ const Home = React.createClass({
                     resume: response.data
                 });
             }.bind(this));
+    },
+
+    changeWaypoint: function (section) {
+        this.setState({
+            currentSection: section
+        });
     },
 
     render: function () {
@@ -52,7 +59,10 @@ const Home = React.createClass({
                 <Section
                     basics={this.state.resume.basics}
                     work={this.state.resume.work}
-                    education={this.state.resume.education}/>
+                    education={this.state.resume.education}
+                    skills={this.state.resume.skills}
+                    languages={this.state.resume.languages}
+                    references={this.state.resume.references}/>
             </div>
         );
     }

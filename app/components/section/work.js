@@ -1,6 +1,7 @@
 'use strict';
 
 const React = require('react');
+const PropTypes = React.PropTypes;
 
 const ResumePropTypes = require('../../prop_types/resume');
 const BulletPoints = require('../bullet_points');
@@ -8,12 +9,17 @@ const Datetime = require('../../utils/datetime');
 
 const Entry = React.createClass({
     propTypes: {
+        index: PropTypes.number.isRequired,
+        total: PropTypes.number.isRequired,
         entry: ResumePropTypes.work
     },
 
     render: function () {
         const startDate = Datetime.getDisplayFromDate(this.props.entry.startDate);
         const endDate = Datetime.getDisplayFromDate(this.props.entry.endDate);
+        const index = this.props.index + 1;
+        const divider = index === this.props.total ? (<br/>) : (<hr/>);
+
         return (
             <div className='row item'>
                 <div className='twelve columns'>
@@ -25,7 +31,7 @@ const Entry = React.createClass({
                     </p>
                     <BulletPoints points={this.props.entry.highlights}/>
                 </div>
-                <hr/>
+                {divider}
             </div>
         );
     }
@@ -37,6 +43,7 @@ const Work = React.createClass({
     },
 
     render: function () {
+        const num_entries = this.props.content.length;
         return (
             <div className='row work'>
                 <div className='three columns header-col'>
@@ -47,7 +54,7 @@ const Work = React.createClass({
                 <div className='nine columns main-col'>
                     {this.props.content.map(function (entry, index) {
                         return (
-                            <Entry key={index} entry={entry}/>
+                            <Entry key={index} index={index} total={num_entries} entry={entry}/>
                         );
                     })}
                 </div>
