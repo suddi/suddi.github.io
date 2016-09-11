@@ -7,11 +7,23 @@ window.jQuery(document).ready(function ($) {
         handler: function (_event, direction) {
             const active_section = getActiveSection($(this), direction);
             var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
-            navigation_links.parent().removeClass("current");
-            active_link.parent().addClass("current");
+            navigation_links.parent().removeClass('current');
+            active_link.parent().addClass('current');
         },
         offset: '35%'
     });
+
+    // $('header').css({
+    //     height: $(window).height()
+    // });
+    // $(window).on('resize', function () {
+    //     $('header').css({
+    //         height: $(window).height()
+    //     });
+    //     $('body').css({
+    //         width: $(window).width()
+    //     });
+    // });
 });
 
 function getActiveSection(active_section, direction) {

@@ -1,13 +1,14 @@
 'use strict';
 
 const path = require('path');
-// const webpack = require('webpack');
+const webpack = require('webpack');
 
 module.exports = {
-    entry: {
-        javascript: path.join(__dirname, 'app/index.js'),
-        html: path.join(__dirname, 'index.html')
-    },
+    devtool: 'source-map',
+
+    entry: [
+        path.join(__dirname, 'app/index.js')
+    ],
 
     output: {
         path: path.join(__dirname, 'public'),
@@ -19,20 +20,14 @@ module.exports = {
             {
                 test: /\.js$/,
                 include: path.join(__dirname, 'app'),
-                loaders: ['react-hot', 'babel-loader']
-            },
-            {
-                test: /\.html$/,
-                loader: 'file?name=[name].[ext]'
+                loaders: ['babel-loader']
             }
-        ],
-
-        exprContextCritical: false
+        ]
     },
 
     plugins: [
-        // new webpack.optimize.DedupePlugin(),
-        // new webpack.optimize.OccurenceOrderPlugin(),
-        // new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}})
+        new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}})
     ]
 };
