@@ -256,7 +256,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 strong.fa-quora {
-  font: 28px serif;
+  font: 100% serif;
 }
 
 
@@ -435,7 +435,7 @@ strong.fa-quora {
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
-   color: #ccc;
+   color: #FFFFFF;
 	text-transform: uppercase;
    letter-spacing: 2px;
 	font-weight: normal;

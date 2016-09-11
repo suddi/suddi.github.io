@@ -23,10 +23,33 @@ const Entry = React.createClass({
         entry: ResumePropTypes.languages
     },
 
+    getInitialState: function () {
+        return {
+            style: {
+                background: '#313131'
+            }
+        };
+    },
+
+        return this.setState({
+            style: {
+                background: '#11ABB0'
+            }
+        });
+    },
+
+    handleMouseLeave: function () {
+        return this.setState({
+            style: {
+                background: '#313131'
+            }
+        });
+    },
+
     render: function () {
         return (
             <li>
-                <span className={'bar-expand percentage' + this.props.entry.level}></span>
+                <span className={'bar-expand percentage' + this.props.entry.level} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} style={this.state.style}></span>
                 <em>{this.props.entry.name}</em>
             </li>
         );

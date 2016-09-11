@@ -59,14 +59,18 @@
 
    /* Resume Section
    ------------------------------------------------------------------- */
+   #work { padding-top: 10%;}
    #work h1 { font: 16px/24px 'opensans-bold', sans-serif; }
-   #work .main-col { padding-right: 5%; }
+   #work .main-col { padding-right: 5%; padding-top: 10%; }
 
+   #education { padding-top: 10%;}
    #education h1 { font: 16px/24px 'opensans-bold', sans-serif; }
-   #education .main-col { padding-right: 5%; }
+   #education .main-col { padding-right: 5%; padding-top: 10%; }
 
+   #skill { padding-top: 10%;}
    #skill h1 { font: 16px/24px 'opensans-bold', sans-serif; }
-   #skill .main-col { padding-right: 5%; }
+   #skill .main-col { padding-right: 5%; padding-top: 10%; }
+   #skill .inside { margin-left: auto; margin-right: auto; }
 
    /* Testimonials Section
    ------------------------------------------------------------------- */
