@@ -30,7 +30,7 @@ const Header = React.createClass({
     },
 
     render: function () {
-        let style = {
+        const style = {
             height: this.state.window.height
         };
         return (
