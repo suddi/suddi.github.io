@@ -3,7 +3,6 @@
 const React = require('react');
 const PropTypes = React.PropTypes;
 
-const config = require('../../config');
 const ResumePropTypes = require('../../prop_types/resume');
 const BulletPoints = require('../bullet_points');
 const Datetime = require('../../utils/datetime');
@@ -24,18 +23,13 @@ const Entry = React.createClass({
         return (
             <div className='row item'>
                 <div className='twelve columns'>
-                    <div className='two columns logo'>
-                        <img src={config.logo[this.props.entry.company]} alt={this.props.entry.company}/>
-                    </div>
-                    <div className='ten columns content'>
-                        <h3>{this.props.entry.company}</h3>
-                        <p className='info'>
-                            {this.props.entry.position}
-                            &nbsp;&bull;&nbsp;
-                            <em className='date'>{startDate} - {endDate}</em>
-                        </p>
-                        <BulletPoints points={this.props.entry.highlights}/>
-                    </div>
+                    <h3>{this.props.entry.company}</h3>
+                    <p className='info'>
+                        {this.props.entry.position}
+                        &nbsp;&bull;&nbsp;
+                        <em className='date'>{startDate} - {endDate}</em>
+                    </p>
+                    <BulletPoints points={this.props.entry.highlights}/>
                 </div>
                 {divider}
             </div>

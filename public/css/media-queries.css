@@ -61,13 +61,9 @@
    ------------------------------------------------------------------- */
    #work h1 { font: 16px/24px 'opensans-bold', sans-serif; }
    #work .main-col { padding-right: 5%; }
-   #work .logo { display: none; }
-   #work .content { padding-top: 5%; }
 
    #education h1 { font: 16px/24px 'opensans-bold', sans-serif; }
    #education .main-col { padding-right: 5%; }
-   #education .logo { display: none; }
-   #education .content { padding-top: 5%; }
 
    #skill h1 { font: 16px/24px 'opensans-bold', sans-serif; }
    #skill .main-col { padding-right: 5%; }

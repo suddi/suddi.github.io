@@ -289,10 +289,6 @@ strong.fa-quora {
 
 #work .header-col { padding-top: 9px; }
 #work .main-col { padding-right: 10%; }
-#work .row {
-  padding-left: 0px;
-  padding-right: 0px;
-}
 
 .education, .work {
    margin-bottom: 48px;
@@ -347,14 +343,6 @@ strong.fa-quora {
 
 #education .header-col { padding-top: 9px; }
 #education .main-col { padding-right: 10%; }
-#education .row {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-#education .additional-spacing {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 
 #education .info {
    font: 16px/24px 'librebaskerville-italic', serif;
@@ -404,14 +392,6 @@ strong.fa-quora {
 
 #skill .header-col { padding-top: 9px; }
 #skill .main-col { padding-right: 10%; }
-#skill .row {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-#skill .inside {
-  margin-left: 10px;
-}
 
 #skill .info {
    font: 16px/24px 'librebaskerville-italic', serif;

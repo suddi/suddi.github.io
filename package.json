@@ -27,11 +27,12 @@
     "npm": ">= 2.14.7"
   },
   "scripts": {
-    "bundle": "webpack -p",
+    "bundle": "webpack --production",
     "lint": "eslint .",
     "prepush": "npm run lint",
     "setup": ". ./setup.sh",
-    "start": "webpack-dev-server --hot --inline"
+    "start": "webpack-dev-server --hot --inline",
+    "watch": "webpack --watch"
   },
   "dependencies": {},
   "devDependencies": {
