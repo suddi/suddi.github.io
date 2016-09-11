@@ -15,10 +15,10 @@ const About = React.createClass({
         return (
             <section id='about'>
                 <div className='row'>
-                    <div className='three columns'>
+                    <div className='two columns'>
                         <img className='profile-pic' src={this.props.content.picture} alt={this.props.content.name}/>
                     </div>
-                    <div className='nine columns main-col'>
+                    <div className='ten columns main-col'>
                         <h2>About Me</h2>
                         {summary.map(function (content, index) {
                             return (
