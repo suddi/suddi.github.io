@@ -31,6 +31,7 @@ const Entry = React.createClass({
         };
     },
 
+    handleMouseEnter: function () {
         return this.setState({
             style: {
                 background: '#11ABB0'
@@ -47,6 +48,7 @@ const Entry = React.createClass({
     },
 
     render: function () {
+        console.log('%%%%%%%%%%%%%%%%%%%%%%%55');
         return (
             <li>
                 <span className={'bar-expand percentage' + this.props.entry.level} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} style={this.state.style}></span>
