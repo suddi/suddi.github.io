@@ -21,25 +21,18 @@ const Home = React.createClass({
 
     getInitialState: function () {
         return {
-            resume: false,
-            currentSection: 'home'
+            resume: false
         };
     },
 
     componentDidMount: function () {
-        axios
+        return axios
             .get(this.props.route.resume)
             .then(function (response) {
                 this.setState({
                     resume: response.data
                 });
             }.bind(this));
-    },
-
-    changeWaypoint: function (section) {
-        this.setState({
-            currentSection: section
-        });
     },
 
     render: function () {

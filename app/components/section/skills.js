@@ -69,18 +69,20 @@ const Skills = React.createClass({
         const programming_skills = filterSkills(this.props.content.skills, 'programming');
         const database_skills = filterSkills(this.props.content.skills, 'database');
         return (
-            <div className='row skill'>
-                <div className='three columns header-col'>
-                    <h1>
-                        <span>Skills</span>
-                    </h1>
+            <section id='skill'>
+                <div className='row skill'>
+                    <div className='three columns header-col'>
+                        <h1>
+                            <span>Skills</span>
+                        </h1>
+                    </div>
+                    <div className='nine columns main-col'>
+                        <Skill title='Programming Languages' content={programming_skills}/>
+                        <Skill title='Database Systems' content={database_skills}/>
+                        <Skill title='Languages' content={this.props.content.languages}/>
+                    </div>
                 </div>
-                <div className='nine columns main-col'>
-                    <Skill title='Programming Languages' content={programming_skills}/>
-                    <Skill title='Database Systems' content={database_skills}/>
-                    <Skill title='Languages' content={this.props.content.languages}/>
-                </div>
-            </div>
+            </section>
         );
     }
 });

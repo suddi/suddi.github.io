@@ -34,6 +34,21 @@ body {
    height: 100%;
 }
 
+.appear-enter {
+  transition-duration: .7s;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+  opacity: 0;
+}
+
+.appear-enter.appear-enter-active {
+  opacity: 1;
+}
+
+.appear-leave {
+  opacity: 0;
+}
+
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
@@ -246,57 +261,156 @@ strong.fa-quora {
 
 
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
+/* d. Work Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#work {
    background: #fff;
    padding-top: 90px;
-   padding-bottom: 72px;
+   padding-bottom: 0px;
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#work a, #work a:visited  { color: #11ABB0; }
+#work a:hover, #work a:focus { color: #313131; }
 
-#resume h1 {
+#work h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#resume h1 span {
+#work h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
 }
-#resume h3 {
+#work h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#work .header-col { padding-top: 9px; }
+#work .main-col { padding-right: 10%; }
 
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
-#resume .info {
+#work .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
-#resume .info span {
+#work .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#resume .date {
+#work .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
-#resume .point {
+#work .point {
    margin: 0 0 10px 0;
 }
+
+
+/* ------------------------------------------------------------------ */
+/* d. Education Section
+/* ------------------------------------------------------------------ */
+
+#education {
+   background: #fff;
+   padding-top: 72px;
+   padding-bottom: 0px;
+   overflow: hidden;
+}
+
+#education a, #education a:visited  { color: #11ABB0; }
+#education a:hover, #education a:focus { color: #313131; }
+
+#education h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#education h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#education h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#education .header-col { padding-top: 9px; }
+#education .main-col { padding-right: 10%; }
+
+#education .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#education .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#education .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+#education .point {
+   margin: 0 0 10px 0;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* d. Skill Section
+/* ------------------------------------------------------------------ */
+
+#skill {
+   background: #fff;
+   padding-top: 72px;
+   padding-bottom: 20px;
+   overflow: hidden;
+}
+
+#skill a, #skill a:visited  { color: #11ABB0; }
+#skill a:hover, #skill a:focus { color: #313131; }
+
+#skill h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#skill h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#skill h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#skill .header-col { padding-top: 9px; }
+#skill .main-col { padding-right: 10%; }
+
+#skill .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#skill .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#skill .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+#skill .point {
+   margin: 0 0 10px 0;
+}
+
 
 /*----------------------------------------------*/
 /*	Skill Bars
@@ -1014,7 +1128,7 @@ footer {
 }
 
 footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+footer a:hover, footer a:focus { color: #11ABB0; }
 
 /* copyright */
 footer .copyright {

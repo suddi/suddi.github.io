@@ -1,16 +1,11 @@
 'use strict';
 
 const React = require('react');
-const PropTypes = React.PropTypes;
 
 const Link = require('./link');
 const config = require('../../config');
 
 const Navigation = React.createClass({
-    propTypes: {
-        currentSection: PropTypes.string.isRequired
-    },
-
     render: function () {
         return (
             <nav id='nav-wrap' className='opaque'>

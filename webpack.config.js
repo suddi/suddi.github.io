@@ -1,28 +1,21 @@
 'use strict';
 
 const path = require('path');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
     template: path.join(__dirname, '/index.html'),
-    filename: 'index.html',
-    inject: 'body'
+    filename: 'index.html'
 });
 
 module.exports = {
-    target: 'web',
-    cache: false,
-    debug: false,
-    devtool: false,
-
     entry: [
         path.join(__dirname, 'app/index.js')
     ],
 
     output: {
         path: path.join(__dirname, 'public'),
-        publicPath: path.join(__dirname, 'public'),
         filename: 'bundle.js'
     },
 
@@ -30,11 +23,8 @@ module.exports = {
         loaders: [
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['react']
-                }
+                include: path.join(__dirname, 'app'),
+                loaders: ['react-hot', 'babel-loader']
             }
         ],
 
@@ -42,20 +32,9 @@ module.exports = {
     },
 
     plugins: [
-        HTMLWebpackPluginConfig,
-        new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}})
-    ],
-
-    resolve: {
-        modulesDirectories: [
-            'node_modules'
-        ],
-        extensions: ['', '.js']
-    },
-
-    resolveLoader: {
-        root: path.join(__dirname, 'node_modules')
-    }
+        HTMLWebpackPluginConfig
+        // new webpack.optimize.DedupePlugin(),
+        // new webpack.optimize.OccurenceOrderPlugin(),
+        // new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}})
+    ]
 };

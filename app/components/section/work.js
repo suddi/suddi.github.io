@@ -45,20 +45,22 @@ const Work = React.createClass({
     render: function () {
         const num_entries = this.props.content.length;
         return (
-            <div className='row work'>
-                <div className='three columns header-col'>
-                    <h1>
-                        <span>Work</span>
-                    </h1>
+            <section id='work'>
+                <div className='row work'>
+                    <div className='three columns header-col'>
+                        <h1>
+                            <span>Work</span>
+                        </h1>
+                    </div>
+                    <div className='nine columns main-col'>
+                        {this.props.content.map(function (entry, index) {
+                            return (
+                                <Entry key={index} index={index} total={num_entries} entry={entry}/>
+                            );
+                        })}
+                    </div>
                 </div>
-                <div className='nine columns main-col'>
-                    {this.props.content.map(function (entry, index) {
-                        return (
-                            <Entry key={index} index={index} total={num_entries} entry={entry}/>
-                        );
-                    })}
-                </div>
-            </div>
+            </section>
         );
     }
 });
