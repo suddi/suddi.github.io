@@ -5,13 +5,13 @@
         "picture": "https://en.gravatar.com/userimage/26512730/73df4bffac8c6096302afb8406a319d1.jpg?size=200",
         "email": "suddir@gmail.com",
         "phone": "+85251998799",
-        "website": "https://suddi.github.io/",
-        "summary": "",
+        "website": "https://suddi.github.io",
+        "summary": "Conscientious, results-driven, articulate and analytical software engineer with several years’ exposure in data-driven software engineering teams; primarily focusing on backend and systems development of large-scale distributed systems. Strong in architectural research, software design and agile team management, having served as a long time tech lead.\nExcellent written and verbal communication skills. Interested in challenging technical roles in scaling distributed web applications.",
         "location": {
             "address": "",
             "postalCode": "",
             "city": "Kowloon",
-            "countryCode": "HKG",
+            "countryCode": "Hong Kong",
             "region": ""
         },
         "profiles": [
@@ -292,16 +292,16 @@
             ]
         },
         {
-            "name": "MongoDB",
-            "level": "70",
+            "name": "RethinkDB",
+            "level": "80",
             "keywords": [
                 "database",
                 "nosql"
             ]
         },
         {
-            "name": "RethinkDB",
-            "level": "80",
+            "name": "MongoDB",
+            "level": "70",
             "keywords": [
                 "database",
                 "nosql"

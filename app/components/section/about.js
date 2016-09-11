@@ -10,6 +10,8 @@ const About = React.createClass({
     },
 
     render: function () {
+        const summary = this.props.content.summary.split('\n');
+        console.log(summary);
         return (
             <section id='about'>
                 <div className='row'>
@@ -18,7 +20,13 @@ const About = React.createClass({
                     </div>
                     <div className='nine columns main-col'>
                         <h2>About Me</h2>
-                        <p>{this.props.content.summary}</p>
+                        {summary.map(function (content, index) {
+                            return (
+                                <p key={index}>
+                                    {content}
+                                </p>
+                            );
+                        })}
                         <div className='row'>
                             <div className='columns contact-details'>
                                 <h2>Contact Details</h2>

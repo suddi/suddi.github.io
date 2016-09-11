@@ -23,11 +23,11 @@
 /* ------------------------------------------------------------------ */
 
 body {
-   background: #0f0f0f;
+   background: #191919;
  }
 
 .loading {
-  background: #161415 url(../images/loader.gif) no-repeat center center;
+  background: #191919 url(../images/loader.gif) no-repeat center center;
    margin: 0 auto;
    width: 100%;
    min-height: 500px;
@@ -35,7 +35,7 @@ body {
 }
 
 .appear-enter {
-  transition-duration: .7s;
+  transition-duration: 20s;
   transition-property: opacity;
   transition-timing-function: ease-out;
   opacity: 0;
