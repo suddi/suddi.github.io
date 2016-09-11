@@ -24,10 +24,10 @@ const Entry = React.createClass({
         return (
             <div className='row item'>
                 <div className='twelve columns'>
-                    <div className='two columns'>
+                    <div className='two columns logo'>
                         <img src={config.logo[this.props.entry.company]} alt={this.props.entry.company}/>
                     </div>
-                    <div className='ten columns'>
+                    <div className='ten columns content'>
                         <h3>{this.props.entry.company}</h3>
                         <p className='info'>
                             {this.props.entry.position}

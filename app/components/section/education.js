@@ -20,7 +20,7 @@ const Entry = React.createClass({
                     <div className='two columns'>
                         <img src={config.logo[this.props.entry.institution]} alt={this.props.entry.company}/>
                     </div>
-                    <div className='ten columns additional-spacing'>
+                    <div className='ten columns additional-spacing content'>
                         <h3>{this.props.entry.institution}</h3>
                         <p className='info'>
                             {this.props.entry.area}
