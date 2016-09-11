@@ -16,7 +16,7 @@ const Entry = React.createClass({
         const endDate = Datetime.getDisplayFromDate(this.props.entry.endDate);
         return (
             <div className='row item'>
-                <div className='twelve columns'>
+                <div className='twelve columns logo'>
                     <div className='two columns'>
                         <img src={config.logo[this.props.entry.institution]} alt={this.props.entry.company}/>
                     </div>
