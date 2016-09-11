@@ -16,8 +16,8 @@ const Entry = React.createClass({
         const endDate = Datetime.getDisplayFromDate(this.props.entry.endDate);
         return (
             <div className='row item'>
-                <div className='twelve columns logo'>
-                    <div className='two columns'>
+                <div className='twelve columns'>
+                    <div className='two columns logo'>
                         <img src={config.logo[this.props.entry.institution]} alt={this.props.entry.company}/>
                     </div>
                     <div className='ten columns additional-spacing content'>
