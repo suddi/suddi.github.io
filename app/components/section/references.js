@@ -18,8 +18,12 @@ const Entry = React.createClass({
             <li>
                 <blockquote>
                     <p>{this.props.entry.reference}</p>
-                    <cite>{_name}</cite>
-                    <cite>{position + ', ' + company}</cite>
+                    <cite>
+                        {_name}
+                        <br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        {position + ', ' + company}
+                    </cite>
                 </blockquote>
             </li>
         );

@@ -11,7 +11,6 @@ const About = React.createClass({
 
     render: function () {
         const summary = this.props.content.summary.split('\n');
-        console.log(summary);
         return (
             <section id='about'>
                 <div className='row'>

@@ -18,6 +18,7 @@ const Banner = React.createClass({
                     {/*
                         <h3>{this.props.basics.summary}</h3>
                     */}
+                    <br/>
                     <hr/>
                     <SocialMedia ul_class='social' profiles={this.props.basics.profiles}/>
                 </div>

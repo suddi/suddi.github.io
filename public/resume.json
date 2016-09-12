@@ -61,8 +61,10 @@
             "endDate": "Present",
             "summary": "Tsuen Wan, Hong Kong",
             "highlights": [
-                "Involved in the development of a new product for the company from the beginning, building primarily the workers to interface with various Web Services, and the RESTful API for the product.",
-                "Led a team of up-to 9 developers to maintain and extend the product as Tech Lead/Scrum Master.",
+                "Involved in end-to-end development of a new product from the ground up, working in Node.js to build the React.js frontend and distributed Express.js RESTful API, with DynamoDB and Aurora RDS MySQL database systems.",
+                "Engineered the in-use worker environment to interface with various SOAP and RESTful logistics courier APIs.",
+                "Introduced continuous integration and code coverage tools with Travis and Codecov respectively, and created custom Docker containers to speed up testing execution.",
+                "Led an agile software development team of up to 8 engineers to maintain and extend the product as Tech Lead/Scrum Master.",
                 "Performed Product Manager duties and was responsible for development scheduling and product delivery."
             ]
         },
@@ -86,23 +88,22 @@
             "endDate": "2013-02-28",
             "summary": "Sheung Wan, Hong Kong",
             "highlights": [
-                "Managed a small team to meet milestone requirements extending the company’s real-time group-buying data collection infrastructure, handling an hourly volume of 100,000+ database entries.",
-                "Wrote an automated and manual Microsoft Excel based data entry updater in Python for client and internal use to amend all chronological entries pertaining to deals in the relevant collections within the Mongo database.",
+                "Led an agile software development team of 4 engineers to meet milestone requirements extending the company’s real-time group-buying data collection infrastructure, handling an hourly volume of ~100,000 database entries.",
+                "Wrote a Microsoft Excel based data entry updater in Python for client and internal use to amend all chronological entries pertaining to group-buying deals in the relevant collections within MongoDB.",
                 "Supervised and reviewed developments to the data collection system and deployed updates nightly.",
-                "Built a daily cron-instigated Python console application to export the previous day’s data in Microsoft Excel for review by the analyst team.",
-                "Extended the Scrapy data gathering system, adding a templating tool to fit the company’s necessities and quicken crawler development allowing for outsourcing.",
-                "Maintained and further appended the company’s data collection, monitoring and Django-based dashboard infrastructure."
+                "Extended the Scrapy data collection system, adding a templating tool for crawler generation, quickening development time and accommodating for outsourcing.",
+                "Maintained and extended the Django-based crawler monitoring, client dashboard and RESTful API infrastructure through Python and PostgreSQL."
             ]
         },
         {
             "company": "eSolutions Limited",
             "position": "Web Applications Developer Intern",
-            "website": "",
+            "website": "http://www.esol-group.com/",
             "startDate": "2010-10-01",
             "endDate": "2010-12-31",
             "summary": "Central, Hong Kong",
             "highlights": [
-                "Helped design innovative corporate web solutions for e-commerce enterprises, in addition to maintenance work for the company’s existing systems."
+                "Collaborated in designing innovative corporate web solutions for e-commerce enterprises in ASP.NET and JavaScript, and provided support for the company’s existing systems through the in-house CMS."
             ]
         },
         {
@@ -113,7 +114,7 @@
             "endDate": "2010-09-01",
             "summary": "Malé, Maldives",
             "highlights": [
-                "Built a personnel database web application in PHP from the ground up, to be used between the company and a local telecommunications operator to keep track of employees with company funded mobile phone services."
+                "Developed a personnel database web application in PHP and MySQL from the ground up, to be used between the company and a local telecommunications operator to keep track of employees with company funded mobile phone services."
             ]
         }
     ],
@@ -285,10 +286,11 @@
             ]
         },
         {
-            "name": "Java",
-            "level": "60",
+            "name": "DynamoDB",
+            "level": "80",
             "keywords": [
-                "programming"
+                "database",
+                "nosql"
             ]
         },
         {

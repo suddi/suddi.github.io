@@ -60,13 +60,20 @@ const Entry = React.createClass({
 const Skill = React.createClass({
     propTypes: {
         title: PropTypes.string.isRequired,
-        content: ResumePropTypes.languages_set
+        content: ResumePropTypes.languages_set,
+        summary: PropTypes.string.isRequired
     },
 
     render: function () {
+        const summary = this.props.summary.map(function (point, index) {
+            return (
+                <p key={index} className='skill-summary'>{point}</p>
+            );
+        });
         return (
             <div className='row inside'>
                 <h3>{this.props.title}</h3>
+                {summary}
                 <div className='bars'>
                     <ul className='skills'>
                         {this.props.content.map(function (entry, index) {
@@ -90,6 +97,14 @@ const Skills = React.createClass({
     },
 
     render: function () {
+        const programming_summary = [
+            'Worked primarily with JavaScript, Python and C++, with frameworks such as Express.js, Koa.js, React.js, Django and Flask.',
+            'Interested in functional programming and serverless architectures, exploring with Erlang and AWS Lambda respectively.'
+        ];
+        const database_summary = [
+            'Experienced in both SQL and NoSQL, having worked in companies making use of DynamoDB, MongoDB, PostgreSQL and Aurora RDS flavour of MySQL, with personal further projects utilizing RethinkDB'
+        ];
+
         const programming_skills = filterSkills(this.props.content.skills, 'programming');
         const database_skills = filterSkills(this.props.content.skills, 'database');
         return (
@@ -101,9 +116,11 @@ const Skills = React.createClass({
                         </h1>
                     </div>
                     <div className='ten columns main-col'>
-                        <Skill title='Programming Languages' content={programming_skills}/>
-                        <Skill title='Database Systems' content={database_skills}/>
-                        <Skill title='Languages' content={this.props.content.languages}/>
+                        <Skill title='Programming Languages' content={programming_skills} summary={programming_summary}/>
+                        <Skill title='Database Systems' content={database_skills} summary={database_summary}/>
+                        {/*
+                            <Skill title='Languages' content={this.props.content.languages}/>
+                        */}
                     </div>
                 </div>
             </section>

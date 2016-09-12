@@ -49,6 +49,11 @@ body {
   opacity: 0;
 }
 
+.bullet-point {
+  font-size: 140%;
+  vertical-align: middle;
+}
+
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
@@ -271,8 +276,8 @@ strong.fa-quora {
    overflow: hidden;
 }
 
-#work a, #work a:visited  { color: #11ABB0; }
-#work a:hover, #work a:focus { color: #313131; }
+#work a, #work a:visited  { color: #313131; }
+#work a:hover, #work a:focus { color: #11ABB0; }
 
 #work h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
@@ -409,6 +414,10 @@ strong.fa-quora {
 }
 #skill .point {
    margin: 0 0 10px 0;
+}
+
+#skill .skill-summary {
+  margin: 0 0 10px 0;
 }
 
 

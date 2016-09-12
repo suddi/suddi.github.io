@@ -23,7 +23,9 @@ const Entry = React.createClass({
         return (
             <div className='row item'>
                 <div className='twelve columns'>
-                    <h3>{this.props.entry.company}</h3>
+                    <h3>
+                        <a href={this.props.entry.website}>{this.props.entry.company}</a>
+                    </h3>
                     <p className='info'>
                         {this.props.entry.position}
                         &nbsp;&bull;&nbsp;
