@@ -15,4 +15,4 @@ npm run bundle
 npm start
 ````
 
-You can view the site at `http://localhost:8080`
+You can view the site at `http://localhost:8080` or view the live site at [suddi.github.io](https://suddi.github.io).

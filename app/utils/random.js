@@ -2,15 +2,19 @@
 
 const Random = {
     shuffleArray: function (array) {
-        var current = array.length;
-        while (current !== 0) {
-            const random = Math.floor(Math.random() * current);
-            current -= 1;
-            const temporary = array[current];
-            array[current] = array[random];
-            array[random] = temporary;
+        function applyFunc(current_index, old_array) {
+            if (!current_index) {
+                return old_array;
+            }
+
+            const random_index = Math.floor(Math.random() * current_index);
+            const new_array = Object.assign([], old_array);
+            const temporary_value = old_array[current_index];
+            new_array[current_index] = old_array[random_index];
+            new_array[random_index] = temporary_value;
+            return applyFunc(current_index - 1, new_array);
         }
-        return array;
+        return applyFunc(array.length - 1, array);
     }
 };
 

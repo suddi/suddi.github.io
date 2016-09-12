@@ -35,13 +35,7 @@ const Home = React.createClass({
             }.bind(this));
     },
 
-    render: function () {
-        if (!this.state.resume) {
-            return (
-                <Loading/>
-            );
-        }
-
+    onLoad: function () {
         return (
             <div>
                 <Header>
@@ -59,6 +53,16 @@ const Home = React.createClass({
                     references={this.state.resume.references}/>
             </div>
         );
+    },
+
+    beforeLoad: function () {
+        return (
+            <Loading/>
+        );
+    },
+
+    render: function () {
+        return this.state.resume ? this.onLoad() : this.beforeLoad();
     }
 });
 
