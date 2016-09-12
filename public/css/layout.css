@@ -623,7 +623,7 @@ strong.fa-quora {
    padding-bottom: 60px;
 }
 #portfolio h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
+   font: 18px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
@@ -720,10 +720,12 @@ strong.fa-quora {
 
 /* popup modal */
 .popup-modal {
-	max-width: 550px;
+	max-width: 500px;
 	background: #fff;
-	position: relative;
-	margin: 0 auto;
+	position: fixed;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
 }
 .popup-modal .description-box { padding: 12px 36px 18px 36px; }
 .popup-modal .description-box h4 {
@@ -733,12 +735,12 @@ strong.fa-quora {
 }
 .popup-modal .description-box p {
 	font: 14px/24px 'opensans-regular', sans-serif;
-   color: #A1A1A1;
+   color: #838C95;
    margin-bottom: 12px;
 }
 .popup-modal .description-box .categories {
-   font: 11px/21px 'opensans-light', sans-serif;
-   color: #A1A1A1;
+   font: 12px/21px 'opensans-light', sans-serif;
+   color: #838C95;
    text-transform: uppercase;
    letter-spacing: 2px;
    display: block;

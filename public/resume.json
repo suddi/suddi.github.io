@@ -237,11 +237,60 @@
     ],
     "publications": [
         {
-            "name": "",
-            "publisher": "",
-            "releaseDate": "",
-            "website": "",
-            "summary": ""
+            "name": "Campus Guiding System:Web:JavaScript, jQuery, PHP, MySQL",
+            "publisher": "suddi",
+            "releaseDate": "2010-12-01",
+            "website": "https://github.com/suddi/campusMaps",
+            "summary": "Campus Guiding System is a Google Maps-like application to provide directions within the HKUST campus. It calculates the shortest route between any two points in the university, using the Dijkstra's search algorithm. The system features a rich UI rendered in jQuery UI and jsDraw2D, providing map manipulation and location search functionalities. The backend is developed in PHP, utilizing MySQL as the database"
+        },
+        {
+            "name": "TweetIndex:Android:Java, Python, Django, MongoDB",
+            "publisher": "suddi",
+            "releaseDate": "2013-12-01",
+            "website": "https://github.com/suddi/TweetIndex",
+            "summary": "TweetIndex is a microblogging analysis tool to identify stock market sentiments expressed through Twitter. Users of TweetIndex can follow influential twitter users who provide substantial advise on market behaviour. TweetIndex collects live tweets specific to the Standard & Poor's 100 Index stocks using Twitter's Streaming API and exposes this information via a Django-based, MongoDB backed RESTful API, an Android application provides the UI and makes user queries."
+        },
+        {
+            "name": "Heatmap Generator:Windows:MATLAB, EyeLink",
+            "publisher": "suddi",
+            "releaseDate": "2013-11-01",
+            "website": "https://github.com/suddi/heatmapGenerator",
+            "summary": "Heatmap Generator is a heatmap generation application developed in MATLAB for eye-tracking data from EyeLink. Data can be input in tab-separated values format (TSV) and will use images in either PNG or JPEG format to generate heatmaps in various conditions, see settings.m for a full set of options."
+        },
+        {
+            "name": "load-directory:Library:Node.js",
+            "publisher": "suddi",
+            "releaseDate": "2016-09-01",
+            "website": "https://www.npmjs.com/package/load-directory",
+            "summary": "load-directory is an extension of the require-all module with require strategies for files, allowing for further customization and standardized structures during loading of directories in Node.js."
+        },
+        {
+            "name": "suddi.github.io:Web:Node.js, React.js",
+            "publisher": "suddi",
+            "releaseDate": "2016-09-01",
+            "website": "https://github.com/suddi/suddi.github.io",
+            "summary": "suddi.github.io is a static single-page application developed using React.js. It uses the Ceevee template designed by Styleshout, ported over to React.js, and follows the JSON Resume schema to store a Curriculum Vitae in JSON format."
+        },
+        {
+            "name": "eslint-config-suddi:Library:Node.js, Eslint",
+            "publisher": "suddi",
+            "releaseDate": "2016-09-01",
+            "website": "https://www.npmjs.com/package/eslint-config-suddi",
+            "summary": "eslint-config-suddi is a custom eslint configuration module that provides backend and frontend eslint configurations for Node.js and React.js software development. It extends/combines the eslint-config-xo and eslint-plugin-react modules."
+        },
+        {
+            "name": "zerohm:iOS:Objective-C",
+            "publisher": "suddi",
+            "releaseDate": "2009-12-01",
+            "website": "https://github.com/suddi/zerohm",
+            "summary": "zerohm is an iPhone game designed to help science and engineering students learn the resistor color band codes, a fundamental identification system in the field of electronics. It features 3 modes aimed to take a student from A-Z in the understanding of resistor color codes. It was developed with Objective-C and XCode 3.1 for iPhone 3.1."
+        },
+        {
+            "name": "docker-setup:Library:Dockerfile",
+            "publisher": "suddi",
+            "releaseDate": "2015-10-01",
+            "website": "https://github.com/suddi/docker-setup",
+            "summary": "Dockerfiles for setting up Node.js workers making use of PDF generation libraries: zint."
         }
     ],
     "skills": [

@@ -7,6 +7,7 @@ const About = require('./about');
 const Work = require('./work');
 const Education = require('./education');
 const Skills = require('./skills');
+const Portfolio = require('./portfolio');
 const References = require('./references');
 const Footer = require('./footer');
 
@@ -17,6 +18,7 @@ const Section = React.createClass({
         education: ResumePropTypes.education_set,
         skills: ResumePropTypes.skills_set,
         languages: ResumePropTypes.languages_set,
+        portfolio: ResumePropTypes.publications_set,
         references: ResumePropTypes.references_set
     },
 
@@ -32,6 +34,7 @@ const Section = React.createClass({
                 <Work content={this.props.work}/>
                 <Education content={this.props.education}/>
                 <Skills content={skills_content}/>
+                <Portfolio content={this.props.portfolio}/>
                 <References content={this.props.references}/>
                 <Footer content={this.props.basics}/>
             </div>

@@ -55,6 +55,7 @@ const Home = React.createClass({
                     education={this.state.resume.education}
                     skills={this.state.resume.skills}
                     languages={this.state.resume.languages}
+                    portfolio={this.state.resume.publications}
                     references={this.state.resume.references}/>
             </div>
         );

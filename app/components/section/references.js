@@ -16,9 +16,7 @@ const Entry = React.createClass({
         const _name = parts[0];
         const position = parts[1];
         const company = parts[2];
-        console.log(_name);
-        console.log(position);
-        console.log(company);
+
         return (
             <div>
                 <blockquote>
