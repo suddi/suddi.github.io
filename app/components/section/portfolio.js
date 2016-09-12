@@ -65,7 +65,7 @@ const Portfolio = React.createClass({
     },
 
     render: function () {
-        const portfolio = Random.shuffleArray(this.props.content);
+        const portfolio = Random.shuffleArray(this.props.content).slice(0, 8);
         return (
             <section id='portfolio'>
                 <div className='row'>
