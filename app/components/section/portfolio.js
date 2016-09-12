@@ -5,6 +5,7 @@ const PropTypes = React.PropTypes;
 
 const config = require('../../config');
 const ResumePropTypes = require('../../prop_types/resume');
+const Random = require('../../utils/random');
 const Modal = require('./modal');
 
 const Entry = React.createClass({
@@ -64,13 +65,14 @@ const Portfolio = React.createClass({
     },
 
     render: function () {
+        const portfolio = Random.shuffleArray(this.props.content).slice(0, 8);
         return (
             <section id='portfolio'>
                 <div className='row'>
                     <div className='twelve columns collapsed'>
                         <h1>Portfolio</h1>
                         <div id='portfolio-wrapper' className='bgrid-quarters s-bgrid-thirds cf'>
-                            {this.props.content.map(function (entry, index) {
+                            {portfolio.map(function (entry, index) {
                                 return (
                                     <Entry key={index} index={index} entry={entry}/>
                                 );
