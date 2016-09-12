@@ -27,11 +27,29 @@ body {
  }
 
 .loading {
-  background: #191919 url(../images/loader.gif) no-repeat center center;
+   background: #191919 url(../images/loader.gif) no-repeat center center;
    margin: 0 auto;
    width: 100%;
    min-height: 500px;
    height: 100%;
+}
+
+.not-found {
+   background: #191919;
+   color: #fff;
+   margin: 0 auto;
+   width: 100%;
+   min-height: 500px;
+   height: 100%;
+   font: 40px/1.1em 'opensans-bold', sans-serif;
+}
+
+.not-found span {
+  font: 18px/1.9em 'librebaskerville-regular', serif;
+}
+
+.not-found a {
+  color: #11ABB0;
 }
 
 .appear-enter {
