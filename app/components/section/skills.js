@@ -61,7 +61,9 @@ const Skill = React.createClass({
     propTypes: {
         title: PropTypes.string.isRequired,
         content: ResumePropTypes.languages_set,
-        summary: PropTypes.string.isRequired
+        summary: PropTypes.arrayOf(
+            PropTypes.string
+        ).isRequired
     },
 
     render: function () {
