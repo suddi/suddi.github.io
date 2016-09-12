@@ -102,7 +102,8 @@ const Skills = React.createClass({
             'Interested in functional programming and serverless architectures, exploring with Erlang and AWS Lambda respectively.'
         ];
         const database_summary = [
-            'Experienced in both SQL and NoSQL, having worked in companies making use of DynamoDB, MongoDB, PostgreSQL and Aurora RDS flavour of MySQL, with personal further projects utilizing RethinkDB'
+            'Experienced in both SQL and NoSQL, having worked in companies making use of DynamoDB, MongoDB, PostgreSQL and Aurora RDS flavour of MySQL, ' +
+            'with personal further projects utilizing RethinkDB'
         ];
 
         const programming_skills = filterSkills(this.props.content.skills, 'programming');
