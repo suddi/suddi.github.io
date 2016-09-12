@@ -291,6 +291,13 @@
             "releaseDate": "2015-10-01",
             "website": "https://github.com/suddi/docker-setup",
             "summary": "Dockerfiles for setting up Node.js workers making use of PDF generation libraries: zint."
+        },
+        {
+            "name": "SimpleSuduoku:Android:Java",
+            "publisher": "suddi",
+            "releaseDate": "2013-10-01",
+            "website": "https://github.com/suddi/simpleSudoku",
+            "summary": "A basic sudoku game for Android phones. Includes two levels of gameplay: \"Level 1\" pits the player in a partially filled grid, \"Level 2\" pits the player in an empty grid."
         }
     ],
     "skills": [

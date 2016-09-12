@@ -50,6 +50,10 @@ module.exports = {
             'docker-setup': {
                 thumb: 'public/images/portfolio/thumb/docker.jpg',
                 modal: 'public/images/portfolio/modal/docker.jpg'
+            },
+            'SimpleSuduoku': {
+                thumb: 'public/images/portfolio/thumb/sudoku.jpg',
+                modal: 'public/images/portfolio/modal/sudoku.png'
             }
         }
     }
