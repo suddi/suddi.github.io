@@ -69,6 +69,7 @@ module.exports.education = PropTypes.shape({
     startDate: PropTypes.string.isRequired,
     endDate: PropTypes.string.isRequired,
     gpa: PropTypes.string.isRequired,
+    summary: PropTypes.string.isRequired,
     courses: module.exports.bullet_points
 });
 module.exports.education_set = PropTypes.arrayOf(

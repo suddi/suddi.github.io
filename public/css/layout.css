@@ -319,7 +319,7 @@ strong.fa-quora {
    border-bottom: 1px solid #E8E8E8;
 }
 #work .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
+   font: 15px/24px 'librebaskerville-regular', sans-serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
@@ -328,8 +328,12 @@ strong.fa-quora {
    margin-right: 5px;
    margin-left: 5px;
 }
+#work .info-summary {
+   font: 15px/24px 'librebaskerville-regular', sans-serif;
+   margin-top: 6px;
+}
 #work .date {
-   font: 15px/24px 'opensans-regular', sans-serif;
+   font: 15px/24px 'librebaskerville-regular', sans-serif;
    margin-top: 6px;
 }
 #work .point {
@@ -368,7 +372,7 @@ strong.fa-quora {
 #education .main-col { padding-right: 10%; }
 
 #education .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
+   font: 15px/24px 'librebaskerville-regular', sans-serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
@@ -377,8 +381,12 @@ strong.fa-quora {
    margin-right: 5px;
    margin-left: 5px;
 }
+#education .info-summary {
+   font: 15px/24px 'librebaskerville-regular', sans-serif;
+   margin-top: 6px;
+}
 #education .date {
-   font: 15px/24px 'opensans-regular', sans-serif;
+   font: 15px/24px 'librebaskerville-regular', sans-serif;
    margin-top: 6px;
 }
 #education .point {
@@ -432,6 +440,9 @@ strong.fa-quora {
 }
 #skill .point {
    margin: 0 0 10px 0;
+}
+#skill .inside {
+   padding: 0 20px;
 }
 
 #skill .skill-summary {

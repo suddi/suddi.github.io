@@ -20,6 +20,8 @@ const Entry = React.createClass({
                     <p className='info'>
                         {this.props.entry.area}
                         <span> &bull; </span>
+                        <span className='info-summary'>{this.props.entry.summary}</span>
+                        <span> &bull; </span>
                         <em className='date'>{startDate} - {endDate}</em>
                     </p>
                 </div>

@@ -99,7 +99,7 @@
    }
    #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
 
-
+   .popup-modal { max-width: 85%; max-height: 80%; overflow: auto; }
 }
 
 /* mobile wide/smaller tablets

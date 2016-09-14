@@ -6,7 +6,7 @@
         "email": "suddir@gmail.com",
         "phone": "+85251998799",
         "website": "https://suddi.github.io",
-        "summary": "Conscientious, results-driven, articulate and analytical software engineer with several years’ exposure in data-driven software engineering teams; primarily focusing on backend and systems development of large-scale distributed systems. Strong in architectural research, software design and agile team management, having served as a long time tech lead.\nExcellent written and verbal communication skills. Interested in challenging technical roles in scaling distributed web applications.",
+        "summary": "Conscientious, results-driven, articulate and analytical software engineer with several years’ exposure in data-driven software engineering teams; primarily focusing on backend and systems development of large-scale distributed systems. Strong in architectural research, software design and agile team management, having served as a tech lead at multiple companies.\nExcellent written and verbal communication skills. Interested in challenging technical roles in scaling distributed web applications.",
         "location": {
             "address": "",
             "postalCode": "",
@@ -164,6 +164,7 @@
             "startDate": "2013-09-01",
             "endDate": "2014-12-31",
             "gpa": "Distinction",
+            "summary": "Pok Fu Lam, Hong Kong",
             "courses": [
                 "Smart Phone Applications Development",
                 "Financial Computing",
@@ -184,6 +185,7 @@
             "startDate": "2007-09-01",
             "endDate": "2010-12-31",
             "gpa": "Second Class Honours, Division I",
+            "summary": "Clear Water Bay, Hong Kong",
             "courses": [
                 "Computer Graphics",
                 "Java Programming",
@@ -199,11 +201,12 @@
         },
         {
             "institution": "Simon Fraser University",
-            "area": "BEng. in Computer Science (Exchange Programme)",
+            "area": "BEng. in Computer Science",
             "studyType": "Bachelors",
             "startDate": "2009-09-01",
             "endDate": "2009-12-31",
             "gpa": "",
+            "summary": "Vancouver, Canada",
             "courses": [
                 "Software Engineering"
             ]

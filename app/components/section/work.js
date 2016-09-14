@@ -28,7 +28,9 @@ const Entry = React.createClass({
                     </h3>
                     <p className='info'>
                         {this.props.entry.position}
-                        &nbsp;&bull;&nbsp;
+                        <span> &bull; </span>
+                        <span className='info-summary'>{this.props.entry.summary}</span>
+                        <span> &bull; </span>
                         <em className='date'>{startDate} - {endDate}</em>
                     </p>
                     <BulletPoints points={this.props.entry.highlights}/>
