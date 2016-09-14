@@ -47,11 +47,11 @@ module.exports = {
                 thumb: 'public/images/portfolio/thumb/npm.jpg',
                 modal: 'public/images/portfolio/modal/npm.png'
             },
-            'docker-setup': {
+            'dockerfiles': {
                 thumb: 'public/images/portfolio/thumb/docker.jpg',
                 modal: 'public/images/portfolio/modal/docker.jpg'
             },
-            'SimpleSuduoku': {
+            'SimpleSudoku': {
                 thumb: 'public/images/portfolio/thumb/sudoku.jpg',
                 modal: 'public/images/portfolio/modal/sudoku.png'
             }
