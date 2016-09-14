@@ -750,9 +750,11 @@ strong.fa-quora {
 /* popup modal */
 .popup-modal {
 	max-width: 500px;
-	background: #fff;
-	position: fixed;
-	top: 50%;
+  max-height: 80%;
+  overflow: auto;
+  background: #fff;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%)
 }
