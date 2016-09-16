@@ -63,7 +63,7 @@
             "highlights": [
                 "Involved in end-to-end development of a new product from the ground up, working in Node.js to build the React.js frontend and distributed Express.js RESTful API, with DynamoDB and Aurora RDS MySQL database systems.",
                 "Engineered the in-use worker environment to interface with various SOAP and RESTful logistics courier APIs.",
-                "Introduced continuous integration and code coverage tools with Travis and Codecov respectively, and created custom Docker containers to speed up testing execution.",
+                "Introduced continuous integration and code coverage tools with Travis, Istanbul and Codecov, and created custom Docker containers to speed up testing execution.",
                 "Led an agile software development team of up to 8 engineers to maintain and extend the product as Tech Lead/Scrum Master.",
                 "Performed Product Manager duties and was responsible for development scheduling and product delivery."
             ]
