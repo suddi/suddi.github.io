@@ -73,7 +73,7 @@
             "position": "Researcher",
             "website": "http://www.hku.hk/",
             "startDate": "2013-03-01",
-            "endDate": "2013-12-31",
+            "endDate": "2014-12-31",
             "summary": "Pok Fu Lam, Hong Kong",
             "highlights": [
                 "Conducted literary research into potential psychophysical experiments in the area of human perception and developed the infrastructure using one of C++/Python/MATLAB and OpenGL 4.1, depending on the complexity and requirements of the task.",
@@ -244,7 +244,7 @@
             "publisher": "suddi",
             "releaseDate": "2010-12-01",
             "website": "https://github.com/suddi/campus-maps",
-            "summary": "Campus Guiding System is a Google Maps-like application to provide directions within the HKUST campus. It calculates the shortest route between any two points in the university, using the Dijkstra's search algorithm. The system features a rich UI rendered in jQuery UI and jsDraw2D, providing map manipulation and location search functionalities. The backend is developed in PHP, utilizing MySQL as the database"
+            "summary": "Campus Guiding System is a Google Maps-like application to provide directions within the HKUST campus. It calculates the shortest route between any two points in the university, using the Dijkstra's search algorithm. The system features a rich UI rendered in jQuery UI and jsDraw2D, providing map manipulation and location search functionalities. The backend is developed in PHP, utilizing MySQL as the database."
         },
         {
             "name": "TweetIndex:Android:Java, Python, Django, MongoDB",
@@ -258,7 +258,7 @@
             "publisher": "suddi",
             "releaseDate": "2013-11-01",
             "website": "https://github.com/suddi/heatmap-generator",
-            "summary": "Heatmap Generator is a heatmap generation application developed in MATLAB for eye-tracking data from EyeLink. Data can be input in tab-separated values format (TSV) and will use images in either PNG or JPEG format to generate heatmaps in various conditions, see settings.m for a full set of options."
+            "summary": "Heatmap Generator is a heatmap generation application developed in MATLAB for eye-tracking data from EyeLink. Data can be input in tab-separated values format (TSV) and will use images in either PNG or JPEG format to generate heatmaps in various conditions."
         },
         {
             "name": "load-directory:Library:Node.js",
