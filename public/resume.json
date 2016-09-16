@@ -251,7 +251,7 @@
             "publisher": "suddi",
             "releaseDate": "2013-12-01",
             "website": "https://github.com/suddi/TweetIndex",
-            "summary": "TweetIndex is a microblogging analysis tool to identify stock market sentiments expressed through Twitter. Users of TweetIndex can follow influential twitter users who provide substantial advise on market behaviour. TweetIndex collects live tweets specific to the Standard & Poor's 100 Index stocks using Twitter's Streaming API and exposes this information via a Django-based, MongoDB backed RESTful API, an Android application provides the UI and makes user queries."
+            "summary": "TweetIndex is a stock recommendations aggregator to identify stock market sentiments expressed through Twitter. Users of TweetIndex can follow influential twitter users who provide substantial advise on market behaviour. TweetIndex collects live tweets specific to the Standard & Poor's 100 Index stocks using Twitter's Streaming API and exposes this information via a Django-based, MongoDB backed RESTful API, an Android application provides the UI and makes user queries."
         },
         {
             "name": "Heatmap Generator:Windows:MATLAB, EyeLink",
