@@ -76,7 +76,7 @@
             "endDate": "2014-12-31",
             "summary": "Pok Fu Lam, Hong Kong",
             "highlights": [
-                "Conducted literary research into potential psychophysical experiments in the area of human perception and developed the infrastructure using one of C++/Python/MATLAB and OpenGL 4.1, depending on the complexity and requirements of the task.",
+                "Conducted literary research and psychophysical experiments in the area of human perception and developed the infrastructure using one of C++/Python/MATLAB and OpenGL 4.1, depending on the complexity and requirements of the task.",
                 "Built a general experiment engine in Python and OpenGL to create 3D vision experiments, with GUI interface for participant data collection."
             ]
         },
