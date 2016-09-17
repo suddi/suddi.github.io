@@ -3,7 +3,7 @@
 const React = require('react');
 const PropTypes = React.PropTypes;
 
-const axios = require('axios');
+const request = require('superagent');
 
 const Header = require('./header');
 const Navigation = require('./navigation');
@@ -26,10 +26,10 @@ const Home = React.createClass({
     },
 
     componentDidMount: function () {
-        return axios
+        return request
             .get(this.props.route.resume)
-            .then(function (response) {
-                this.setState({
+            .end(function (error, response) {
+                return error ? error : this.setState({
                     resume: response.data
                 });
             }.bind(this));
