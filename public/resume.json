@@ -63,7 +63,7 @@
             "highlights": [
                 "Involved in end-to-end development of a new product from the ground up, working in Node.js to build the React.js frontend and distributed Express.js RESTful API, with DynamoDB and Aurora RDS MySQL database systems.",
                 "Engineered the in-use worker environment to interface with various SOAP and RESTful logistics courier APIs.",
-                "Introduced continuous integration and code coverage tools with Travis and Codecov respectively, and created custom Docker containers to speed up testing execution.",
+                "Introduced continuous integration and code coverage tools with Travis, Istanbul and Codecov, and created custom Docker containers to speed up testing execution.",
                 "Led an agile software development team of up to 8 engineers to maintain and extend the product as Tech Lead/Scrum Master.",
                 "Performed Product Manager duties and was responsible for development scheduling and product delivery."
             ]
@@ -73,11 +73,11 @@
             "position": "Researcher",
             "website": "http://www.hku.hk/",
             "startDate": "2013-03-01",
-            "endDate": "2013-12-31",
+            "endDate": "2014-12-31",
             "summary": "Pok Fu Lam, Hong Kong",
             "highlights": [
-                "Conducted literary research into potential psychophysical experiments in the area of human perception and developed the infrastructure using one of C++/Python/MATLAB and OpenGL 4.1, depending on the complexity and requirements of the task.",
-                "Built a general experiment engine in Python and OpenGL to create 3D vision experiments, with GUI interface for participant data collection."
+                "Conducted literary research and psychophysical experiments in the area of human perception and developed the infrastructure using one of C++/Python/MATLAB and OpenGL 4.1, depending on the complexity and requirements of the task.",
+                "Developed a general experiment engine in Python and OpenGL to create 3D vision experiments, with GUI interface for participant data collection."
             ]
         },
         {
@@ -244,21 +244,21 @@
             "publisher": "suddi",
             "releaseDate": "2010-12-01",
             "website": "https://github.com/suddi/campus-maps",
-            "summary": "Campus Guiding System is a Google Maps-like application to provide directions within the HKUST campus. It calculates the shortest route between any two points in the university, using the Dijkstra's search algorithm. The system features a rich UI rendered in jQuery UI and jsDraw2D, providing map manipulation and location search functionalities. The backend is developed in PHP, utilizing MySQL as the database"
+            "summary": "Campus Guiding System is a Google Maps-like application to provide directions within the HKUST campus. It calculates the shortest route between any two points in the university, using the Dijkstra's search algorithm. The system features a rich UI rendered in jQuery UI and jsDraw2D, providing map manipulation and location search functionalities. The backend is developed in PHP, utilizing MySQL as the database."
         },
         {
             "name": "TweetIndex:Android:Java, Python, Django, MongoDB",
             "publisher": "suddi",
             "releaseDate": "2013-12-01",
             "website": "https://github.com/suddi/TweetIndex",
-            "summary": "TweetIndex is a microblogging analysis tool to identify stock market sentiments expressed through Twitter. Users of TweetIndex can follow influential twitter users who provide substantial advise on market behaviour. TweetIndex collects live tweets specific to the Standard & Poor's 100 Index stocks using Twitter's Streaming API and exposes this information via a Django-based, MongoDB backed RESTful API, an Android application provides the UI and makes user queries."
+            "summary": "TweetIndex is a stock recommendations aggregator to identify stock market sentiments expressed through Twitter. Users of TweetIndex can follow influential twitter users who provide substantial advise on market behaviour. TweetIndex collects live tweets specific to the Standard & Poor's 100 Index stocks using Twitter's Streaming API and exposes this information via a Django-based, MongoDB backed RESTful API, an Android application provides the UI and makes user queries."
         },
         {
             "name": "Heatmap Generator:Windows:MATLAB, EyeLink",
             "publisher": "suddi",
             "releaseDate": "2013-11-01",
             "website": "https://github.com/suddi/heatmap-generator",
-            "summary": "Heatmap Generator is a heatmap generation application developed in MATLAB for eye-tracking data from EyeLink. Data can be input in tab-separated values format (TSV) and will use images in either PNG or JPEG format to generate heatmaps in various conditions, see settings.m for a full set of options."
+            "summary": "Heatmap Generator is a heatmap generation application developed in MATLAB for eye-tracking data from EyeLink. Data can be input in tab-separated values format (TSV) and will use images in either PNG or JPEG format to generate heatmaps in various conditions."
         },
         {
             "name": "load-directory:Library:Node.js",
@@ -305,8 +305,8 @@
     ],
     "skills": [
         {
-            "name": "Node.js",
-            "level": "95",
+            "name": "JavaScript",
+            "level": "90",
             "keywords": [
                 "programming",
                 "expressjs",
