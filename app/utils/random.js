@@ -8,7 +8,7 @@ const Random = {
             }
 
             const random_index = Math.floor(Math.random() * current_index);
-            const new_array = Object.assign([], old_array);
+            const new_array = JSON.parse(JSON.stringify(old_array));
             const temporary_value = old_array[current_index];
             new_array[current_index] = old_array[random_index];
             new_array[random_index] = temporary_value;
