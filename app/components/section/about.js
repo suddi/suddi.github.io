@@ -1,16 +1,16 @@
 'use strict';
 
-const React = require('react');
+var React = require('react');
 
-const ResumePropTypes = require('../../prop_types/resume');
+var ResumePropTypes = require('../../prop_types/resume');
 
-const About = React.createClass({
+var About = React.createClass({
     propTypes: {
         content: ResumePropTypes.basics
     },
 
     render: function () {
-        const summary = this.props.content.summary.split('\n');
+        var summary = this.props.content.summary.split('\n');
         return (
             <section id='about'>
                 <div className='row'>

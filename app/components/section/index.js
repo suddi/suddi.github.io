@@ -1,17 +1,17 @@
 'use strict';
 
-const React = require('react');
+var React = require('react');
 
-const ResumePropTypes = require('../../prop_types/resume');
-const About = require('./about');
-const Work = require('./work');
-const Education = require('./education');
-const Skills = require('./skills');
-const Portfolio = require('./portfolio');
-const References = require('./references');
-const Footer = require('./footer');
+var ResumePropTypes = require('../../prop_types/resume');
+var About = require('./about');
+var Work = require('./work');
+var Education = require('./education');
+var Skills = require('./skills');
+var Portfolio = require('./portfolio');
+var References = require('./references');
+var Footer = require('./footer');
 
-const Section = React.createClass({
+var Section = React.createClass({
     propTypes: {
         basics: ResumePropTypes.basics,
         work: ResumePropTypes.work_set,
@@ -23,7 +23,7 @@ const Section = React.createClass({
     },
 
     render: function () {
-        const skills_content = {
+        var skills_content = {
             skills: this.props.skills,
             languages: this.props.languages
         };

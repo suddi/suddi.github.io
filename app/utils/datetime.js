@@ -1,12 +1,12 @@
 'use strict';
 
-const moment = require('moment');
+var moment = require('moment');
 
-const Datetime = {
+var Datetime = {
     getDisplayFromDate: function (datetime) {
-        const applyFunc = function () {
-            const d = moment(datetime, 'YYYY-MM-DD');
-            const date = d.date();
+        var applyFunc = function () {
+            var d = moment(datetime, 'YYYY-MM-DD');
+            var date = d.date();
             if (date > 20) {
                 return d.add(1, 'months').format('MMM YYYY');
             }

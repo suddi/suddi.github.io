@@ -1,18 +1,18 @@
 'use strict';
 
-const React = require('react');
-const PropTypes = React.PropTypes;
+var React = require('react');
+var PropTypes = React.PropTypes;
 
-const request = require('superagent');
+var request = require('superagent');
 
-const Header = require('./header');
-const Navigation = require('./navigation');
-const Banner = require('./banner');
-const ScrollDown = require('./scrolldown');
-const Section = require('./section');
-const Loading = require('./loading');
+var Header = require('./header');
+var Navigation = require('./navigation');
+var Banner = require('./banner');
+var ScrollDown = require('./scrolldown');
+var Section = require('./section');
+var Loading = require('./loading');
 
-const Home = React.createClass({
+var Home = React.createClass({
     propTypes: {
         route: PropTypes.shape({
             resume: PropTypes.string.isRequired

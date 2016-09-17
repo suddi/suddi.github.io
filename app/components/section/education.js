@@ -1,18 +1,18 @@
 'use strict';
 
-const React = require('react');
+var React = require('react');
 
-const ResumePropTypes = require('../../prop_types/resume');
-const Datetime = require('../../utils/datetime');
+var ResumePropTypes = require('../../prop_types/resume');
+var Datetime = require('../../utils/datetime');
 
-const Entry = React.createClass({
+var Entry = React.createClass({
     propTypes: {
         entry: ResumePropTypes.education
     },
 
     render: function () {
-        const startDate = Datetime.getDisplayFromDate(this.props.entry.startDate);
-        const endDate = Datetime.getDisplayFromDate(this.props.entry.endDate);
+        var startDate = Datetime.getDisplayFromDate(this.props.entry.startDate);
+        var endDate = Datetime.getDisplayFromDate(this.props.entry.endDate);
         return (
             <div className='row item'>
                 <div className='twelve columns'>
@@ -30,7 +30,7 @@ const Entry = React.createClass({
     }
 });
 
-const Education = React.createClass({
+var Education = React.createClass({
     propTypes: {
         content: ResumePropTypes.education_set
     },

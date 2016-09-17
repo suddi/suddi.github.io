@@ -1,9 +1,9 @@
 'use strict';
 
-const React = require('react');
-const PropTypes = React.PropTypes;
+var React = require('react');
+var PropTypes = React.PropTypes;
 
-const Link = React.createClass({
+var Link = React.createClass({
     propTypes: {
         link: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired

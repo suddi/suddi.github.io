@@ -1,11 +1,11 @@
 'use strict';
 
-const React = require('react');
+var React = require('react');
 
-const ResumePropTypes = require('../prop_types/resume');
-const SocialMedia = require('./social_media');
+var ResumePropTypes = require('../prop_types/resume');
+var SocialMedia = require('./social_media');
 
-const Banner = React.createClass({
+var Banner = React.createClass({
     propTypes: {
         basics: ResumePropTypes.basics
     },

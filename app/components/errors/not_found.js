@@ -1,8 +1,8 @@
 'use strict';
 
-const React = require('react');
+var React = require('react');
 
-const NotFound = React.createClass({
+var NotFound = React.createClass({
     render: function () {
         return (
             <div className='not-found'>

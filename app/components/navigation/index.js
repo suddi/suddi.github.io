@@ -1,11 +1,11 @@
 'use strict';
 
-const React = require('react');
+var React = require('react');
 
-const Link = require('./link');
-const config = require('../../config');
+var Link = require('./link');
+var config = require('../../config');
 
-const Navigation = React.createClass({
+var Navigation = React.createClass({
     render: function () {
         return (
             <nav id='nav-wrap' className='opaque'>
@@ -13,7 +13,7 @@ const Navigation = React.createClass({
                 <a className='mobile-btn' href='#' title='Hide navigation'>Hide navigation</a>
                 <ul id='nav' className='nav'>
                     {Object.keys(config.navigation).map(function (navigation_link, index) {
-                        const navigation_name = config.navigation[navigation_link];
+                        var navigation_name = config.navigation[navigation_link];
                         return (
                             <Link key={index} link={navigation_link} name={navigation_name}/>
                         );

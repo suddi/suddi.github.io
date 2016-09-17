@@ -1,8 +1,8 @@
 'use strict';
 
-const React = require('react');
+var React = require('react');
 
-const Header = React.createClass({
+var Header = React.createClass({
     getInitialState: function () {
         return {
             window: {
@@ -30,7 +30,7 @@ const Header = React.createClass({
     },
 
     render: function () {
-        const style = {
+        var style = {
             height: this.state.window.height
         };
         return (

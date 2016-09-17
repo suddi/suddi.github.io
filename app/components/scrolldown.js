@@ -1,8 +1,8 @@
 'use strict';
 
-const React = require('react');
+var React = require('react');
 
-const ScrollDown = React.createClass({
+var ScrollDown = React.createClass({
     render: function () {
         return (
             <p className='scrolldown'>

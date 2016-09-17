@@ -1,12 +1,12 @@
 'use strict';
 
-const React = require('react');
-const PropTypes = React.PropTypes;
+var React = require('react');
+var PropTypes = React.PropTypes;
 
-const ResumePropTypes = require('../../prop_types/resume');
+var ResumePropTypes = require('../../prop_types/resume');
 
 function filterSkills(input, filter) {
-    const reduced = input.reduce(function (previousValue, currentValue) {
+    var reduced = input.reduce(function (previousValue, currentValue) {
         return {
             output: currentValue.keywords.indexOf(filter) === -1 ? previousValue.output : previousValue.output.concat(currentValue),
             filter: filter
@@ -18,7 +18,7 @@ function filterSkills(input, filter) {
     return reduced.output;
 }
 
-const Entry = React.createClass({
+var Entry = React.createClass({
     propTypes: {
         entry: ResumePropTypes.languages
     },
@@ -57,7 +57,7 @@ const Entry = React.createClass({
     }
 });
 
-const Skill = React.createClass({
+var Skill = React.createClass({
     propTypes: {
         title: PropTypes.string.isRequired,
         content: ResumePropTypes.languages_set,
@@ -67,7 +67,7 @@ const Skill = React.createClass({
     },
 
     render: function () {
-        const summary = this.props.summary.map(function (point, index) {
+        var summary = this.props.summary.map(function (point, index) {
             return (
                 <p key={index} className='skill-summary'>{point}</p>
             );
@@ -90,7 +90,7 @@ const Skill = React.createClass({
     }
 });
 
-const Skills = React.createClass({
+var Skills = React.createClass({
     propTypes: {
         content: PropTypes.shape({
             skills: ResumePropTypes.skills_set,
@@ -99,17 +99,17 @@ const Skills = React.createClass({
     },
 
     render: function () {
-        const programming_summary = [
+        var programming_summary = [
             'Worked primarily with JavaScript, Python and C++, with frameworks such as Express.js, Koa.js, React.js, Django and Flask.',
             'Interested in functional programming and serverless architectures, exploring with Erlang and AWS Lambda respectively.'
         ];
-        const database_summary = [
+        var database_summary = [
             'Experienced in both SQL and NoSQL, having worked in companies making use of DynamoDB, MongoDB, PostgreSQL and Aurora RDS flavour of MySQL, ' +
             'with personal further projects utilizing RethinkDB'
         ];
 
-        const programming_skills = filterSkills(this.props.content.skills, 'programming');
-        const database_skills = filterSkills(this.props.content.skills, 'database');
+        var programming_skills = filterSkills(this.props.content.skills, 'programming');
+        var database_skills = filterSkills(this.props.content.skills, 'database');
         return (
             <section id='skill'>
                 <div className='row skill'>
