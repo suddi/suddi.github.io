@@ -1,18 +1,18 @@
 'use strict';
 
-var React = require('react');
-var ReactRouter = require('react-router');
+const React = require('react');
+const ReactRouter = require('react-router');
 
-var config = require('./config');
+const config = require('./config');
 
-var Main = require('./components/main');
-var Home = require('./components/home');
-var NotFound = require('./components/errors/not_found');
+const Main = require('./components/main');
+const Home = require('./components/home');
+const NotFound = require('./components/errors/not_found');
 
-var Router = ReactRouter.Router;
-var Route = ReactRouter.Route;
-var IndexRoute = ReactRouter.IndexRoute;
-var browserHistory = ReactRouter.browserHistory;
+const Router = ReactRouter.Router;
+const Route = ReactRouter.Route;
+const IndexRoute = ReactRouter.IndexRoute;
+const browserHistory = ReactRouter.browserHistory;
 
 module.exports = (
     <Router history={browserHistory}>

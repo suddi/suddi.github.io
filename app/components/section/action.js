@@ -1,8 +1,8 @@
 'use strict';
 
-var React = require('react');
+const React = require('react');
 
-var Action = React.createClass({
+const Action = React.createClass({
     render: function () {
         return (
             <section id='call-to-action'>

@@ -1,11 +1,11 @@
 'use strict';
 
-var React = require('react');
+const React = require('react');
 
-var ResumePropTypes = require('../../prop_types/resume');
-var SocialMedia = require('../social_media');
+const ResumePropTypes = require('../../prop_types/resume');
+const SocialMedia = require('../social_media');
 
-var Footer = React.createClass({
+const Footer = React.createClass({
     propTypes: {
         content: ResumePropTypes.basics
     },

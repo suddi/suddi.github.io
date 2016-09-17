@@ -1,21 +1,21 @@
 'use strict';
 
-var React = require('react');
+const React = require('react');
 
-var Carousel = require('nuka-carousel');
+const Carousel = require('nuka-carousel');
 
-var ResumePropTypes = require('../../prop_types/resume');
+const ResumePropTypes = require('../../prop_types/resume');
 
-var Entry = React.createClass({
+const Entry = React.createClass({
     propTypes: {
         entry: ResumePropTypes.references
     },
 
     render: function () {
-        var parts = this.props.entry.name.split(':');
-        var _name = parts[0];
-        var position = parts[1];
-        var company = parts[2];
+        const parts = this.props.entry.name.split(':');
+        const _name = parts[0];
+        const position = parts[1];
+        const company = parts[2];
 
         return (
             <div>
@@ -33,13 +33,13 @@ var Entry = React.createClass({
     }
 });
 
-var References = React.createClass({
+const References = React.createClass({
     propTypes: {
         content: ResumePropTypes.references_set
     },
 
     render: function () {
-        var carousel_config = {
+        const carousel_config = {
             autoplay: true,
             decorators: [],
             framePadding: '10px',

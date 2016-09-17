@@ -1,8 +1,8 @@
 'use strict';
 
-var React = require('react');
+const React = require('react');
 
-var Loading = React.createClass({
+const Loading = React.createClass({
     render: function () {
         return (
             <div className='loading'></div>

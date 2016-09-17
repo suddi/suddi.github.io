@@ -1,10 +1,10 @@
 'use strict';
 
-var React = require('react');
+const React = require('react');
 
-var ResumePropTypes = require('../prop_types/resume');
+const ResumePropTypes = require('../prop_types/resume');
 
-var BulletPoints = React.createClass({
+const BulletPoints = React.createClass({
     propTypes: {
         points: ResumePropTypes.bullet_points
     },

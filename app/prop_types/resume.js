@@ -1,7 +1,7 @@
 'use strict';
 
-var React = require('react');
-var PropTypes = React.PropTypes;
+const React = require('react');
+const PropTypes = React.PropTypes;
 
 module.exports.location = PropTypes.shape({
     address: PropTypes.string.isRequired,

@@ -1,14 +1,14 @@
 'use strict';
 
-var React = require('react');
-var PropTypes = React.PropTypes;
+const React = require('react');
+const PropTypes = React.PropTypes;
 
-var ReactModal = require('react-modal');
+const ReactModal = require('react-modal');
 
-var config = require('../../config');
-var ResumePropTypes = require('../../prop_types/resume');
+const config = require('../../config');
+const ResumePropTypes = require('../../prop_types/resume');
 
-var Modal = React.createClass({
+const Modal = React.createClass({
     propTypes: {
         entry: ResumePropTypes.publications,
         isOpen: PropTypes.bool.isRequired,
@@ -16,12 +16,12 @@ var Modal = React.createClass({
     },
 
     render: function () {
-        var parts = this.props.entry.name.split(':');
-        var _name = parts[0];
-        // var category = parts[1];
-        var tools = parts[2];
+        const parts = this.props.entry.name.split(':');
+        const _name = parts[0];
+        // const category = parts[1];
+        const tools = parts[2];
 
-        var style = {
+        const style = {
             overlay: {
                 backgroundColor: 'rgba(0, 0, 0, 0.75)'
             }

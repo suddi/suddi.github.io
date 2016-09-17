@@ -1,12 +1,12 @@
 'use strict';
 
-var React = require('react');
-var PropTypes = React.PropTypes;
+const React = require('react');
+const PropTypes = React.PropTypes;
 
-var ResumePropTypes = require('../prop_types/resume');
+const ResumePropTypes = require('../prop_types/resume');
 
 function mapIcon(social_media) {
-    var media = social_media.replace(/ /g, '-');
+    const media = social_media.replace(/ /g, '-');
     switch (social_media) {
         case 'email':
             return (
@@ -25,7 +25,7 @@ function mapIcon(social_media) {
     }
 }
 
-var SocialMedia = React.createClass({
+const SocialMedia = React.createClass({
     propTypes: {
         ul_class: PropTypes.string.isRequired,
         profiles: ResumePropTypes.profiles
@@ -35,7 +35,7 @@ var SocialMedia = React.createClass({
         return (
             <ul className={this.props.ul_class}>
                 {this.props.profiles.map(function (profile, index) {
-                    var icon = mapIcon(profile.network.toLowerCase());
+                    const icon = mapIcon(profile.network.toLowerCase());
                     return (
                         <li key={index}>
                             <a href={profile.url}>

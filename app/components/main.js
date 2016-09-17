@@ -1,10 +1,10 @@
 'use strict';
 
-var React = require('react');
-var PropTypes = React.PropTypes;
-var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+const React = require('react');
+const PropTypes = React.PropTypes;
+const ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
-var Main = React.createClass({
+const Main = React.createClass({
     propTypes: {
         location: PropTypes.shape({
             pathname: PropTypes.string.isRequired

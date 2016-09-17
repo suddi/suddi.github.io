@@ -1,14 +1,14 @@
 'use strict';
 
-var React = require('react');
-var PropTypes = React.PropTypes;
+const React = require('react');
+const PropTypes = React.PropTypes;
 
-var config = require('../../config');
-var ResumePropTypes = require('../../prop_types/resume');
-var Random = require('../../utils/random');
-var Modal = require('./modal');
+const config = require('../../config');
+const ResumePropTypes = require('../../prop_types/resume');
+const Random = require('../../utils/random');
+const Modal = require('./modal');
 
-var Entry = React.createClass({
+const Entry = React.createClass({
     propTypes: {
         index: PropTypes.number.isRequired,
         entry: ResumePropTypes.publications
@@ -33,10 +33,10 @@ var Entry = React.createClass({
     },
 
     render: function () {
-        var parts = this.props.entry.name.split(':');
-        var _name = parts[0];
-        var category = parts[1];
-        // var tools = parts[2];
+        const parts = this.props.entry.name.split(':');
+        const _name = parts[0];
+        const category = parts[1];
+        // const tools = parts[2];
         // config.portfolio.image[_name].src
 
         return (
@@ -59,13 +59,13 @@ var Entry = React.createClass({
     }
 });
 
-var Portfolio = React.createClass({
+const Portfolio = React.createClass({
     propTypes: {
         content: ResumePropTypes.publications_set
     },
 
     render: function () {
-        var portfolio = Random.shuffleArray(this.props.content).slice(0, 8);
+        const portfolio = Random.shuffleArray(this.props.content).slice(0, 8);
         return (
             <section id='portfolio'>
                 <div className='row'>

@@ -1,13 +1,13 @@
 'use strict';
 
-var React = require('react');
-var PropTypes = React.PropTypes;
+const React = require('react');
+const PropTypes = React.PropTypes;
 
-var ResumePropTypes = require('../../prop_types/resume');
-var BulletPoints = require('../bullet_points');
-var Datetime = require('../../utils/datetime');
+const ResumePropTypes = require('../../prop_types/resume');
+const BulletPoints = require('../bullet_points');
+const Datetime = require('../../utils/datetime');
 
-var Entry = React.createClass({
+const Entry = React.createClass({
     propTypes: {
         index: PropTypes.number.isRequired,
         total: PropTypes.number.isRequired,
@@ -15,10 +15,10 @@ var Entry = React.createClass({
     },
 
     render: function () {
-        var startDate = Datetime.getDisplayFromDate(this.props.entry.startDate);
-        var endDate = Datetime.getDisplayFromDate(this.props.entry.endDate);
-        var index = this.props.index + 1;
-        var divider = index === this.props.total ? (<br/>) : (<hr/>);
+        const startDate = Datetime.getDisplayFromDate(this.props.entry.startDate);
+        const endDate = Datetime.getDisplayFromDate(this.props.entry.endDate);
+        const index = this.props.index + 1;
+        const divider = index === this.props.total ? (<br/>) : (<hr/>);
 
         return (
             <div className='row item'>
@@ -41,13 +41,13 @@ var Entry = React.createClass({
     }
 });
 
-var Work = React.createClass({
+const Work = React.createClass({
     propTypes: {
         content: ResumePropTypes.work_set
     },
 
     render: function () {
-        var num_entries = this.props.content.length;
+        const num_entries = this.props.content.length;
         return (
             <section id='work'>
                 <div className='row work'>
