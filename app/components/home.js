@@ -29,6 +29,7 @@ const Home = React.createClass({
         return request
             .get(this.props.route.resume)
             .end(function (error, response) {
+                console.log('do I make it here');
                 return error ? console.log(error) : this.setState({
                     resume: response.data
                 });
