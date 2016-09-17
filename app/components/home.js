@@ -30,7 +30,7 @@ const Home = React.createClass({
             .get(this.props.route.resume)
             .end(function (error, response) {
                 return error ? error : this.setState({
-                    resume: response
+                    resume: response.body
                 });
             }.bind(this));
     },
