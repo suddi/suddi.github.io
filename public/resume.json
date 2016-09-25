@@ -300,7 +300,7 @@
             "publisher": "suddi",
             "releaseDate": "2013-10-01",
             "website": "https://github.com/suddi/simple-sudoku",
-            "summary": "A basic sudoku game for Android phones. Includes two levels of gameplay: \"Level 1\" pits the player in a partially filled grid, \"Level 2\" pits the player in an empty grid."
+            "summary": "A basic, drag-and-drop tiled sudoku game for Android phones. Includes two levels of gameplay: \"Level 1\" pits the player in a partially filled grid, \"Level 2\" pits the player in an empty grid."
         }
     ],
     "skills": [
