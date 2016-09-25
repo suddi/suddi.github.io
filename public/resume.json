@@ -247,10 +247,10 @@
             "summary": "Campus Guiding System is a Google Maps-like application to provide directions within the HKUST campus. It calculates the shortest route between any two points in the university, using the Dijkstra's search algorithm. The system features a rich UI rendered in jQuery UI and jsDraw2D, providing map manipulation and location search functionalities. The backend is developed in PHP, utilizing MySQL as the database."
         },
         {
-            "name": "TweetIndex:Android:Java, Python, Django, MongoDB",
+            "name": "TweetIndex:Android:Java, Python, DynamoDB",
             "publisher": "suddi",
             "releaseDate": "2013-12-01",
-            "website": "https://github.com/suddi/TweetIndex",
+            "website": "https://github.com/suddi/tweetindex-android",
             "summary": "TweetIndex is a stock recommendations aggregator to identify stock market sentiments expressed through Twitter. Users of TweetIndex can follow influential twitter users who provide substantial advise on market behaviour. TweetIndex collects live tweets specific to the Standard & Poor's 100 Index stocks using Twitter's Streaming API and exposes this information via a Django-based, MongoDB backed RESTful API, an Android application provides the UI and makes user queries."
         },
         {
