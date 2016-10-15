@@ -272,7 +272,7 @@
             "publisher": "suddi",
             "releaseDate": "2016-09-01",
             "website": "https://github.com/suddi/suddi.github.io",
-            "summary": "suddi.github.io is a static single-page application developed using React.js in pure functional code. It extends the Ceevee template designed by Styleshout, ported over to React.js, and follows the JSON Resume schema to store a Curriculum Vitae in JSON format."
+            "summary": "suddi.github.io is a static single-page application developed using React.js in pure functional code. It extends the Ceevee template designed by Styleshout, ported over to React.js, and follows the JSON Resume schema to store a Curriculum Vitae in JSON format. Featured on react.rocks: https://react.rocks/example/JSON_Resume"
         },
         {
             "name": "eslint-config-suddi:Library:Node.js, Eslint",
