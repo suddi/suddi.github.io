@@ -6,6 +6,13 @@
 
 suddi.github.io is a static single-page application developed using React.js. It uses the Ceevee template designed by Styleshout, ported over to React.js, and follows the JSON Resume schema to store a Curriculum Vitae in JSON format.
 
+## Featured
+
+The site has been shown as demo React.js project on the following sites:
+
+* [react.rocks](https://react.rocks/example/JSON_Resume)
+* [爱前端](http://www.17shulihua.com/archives/404)
+
 ## Usage
 
 To setup:
