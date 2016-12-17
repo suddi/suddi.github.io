@@ -32,6 +32,7 @@
     "prepush": "npm run lint",
     "setup": ". ./setup.sh",
     "start": "webpack-dev-server --hot --inline",
+    "test": "npm run lint",
     "watch": "webpack --watch"
   },
   "dependencies": {},

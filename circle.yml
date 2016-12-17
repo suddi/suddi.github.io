@@ -1,0 +1,5 @@
+machine:
+    timezone:
+        Asia/Hong_Kong
+    node:
+        version: "6"
