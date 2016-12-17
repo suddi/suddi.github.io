@@ -1,7 +1,6 @@
 'use strict';
 
 const React = require('react');
-const PropTypes = React.PropTypes;
 
 const config = require('../../config');
 const ResumePropTypes = require('../../prop_types/resume');
@@ -10,7 +9,6 @@ const Modal = require('./modal');
 
 const Entry = React.createClass({
     propTypes: {
-        index: PropTypes.number.isRequired,
         entry: ResumePropTypes.publications
     },
 
@@ -50,7 +48,7 @@ const Entry = React.createClass({
                         </div>
                     </div>
                     <div className='link-icon'>
-                        <i className='icon-down-open'></i>
+                        <i className='icon-down-open'/>
                     </div>
                 </div>
                 <Modal entry={this.props.entry} isOpen={this.state.modalOpen} onRequestClose={this.handleCloseModal}/>
@@ -61,7 +59,7 @@ const Entry = React.createClass({
 
 const Portfolio = React.createClass({
     propTypes: {
-        content: ResumePropTypes.publications_set
+        content: ResumePropTypes.publicationsSet
     },
 
     render: function () {

@@ -43,11 +43,11 @@ const Entry = React.createClass({
 
 const Work = React.createClass({
     propTypes: {
-        content: ResumePropTypes.work_set
+        content: ResumePropTypes.workSet
     },
 
     render: function () {
-        const num_entries = this.props.content.length;
+        const numEntries = this.props.content.length;
         return (
             <section id='work'>
                 <div className='row work'>
@@ -59,7 +59,7 @@ const Work = React.createClass({
                     <div className='ten columns main-col'>
                         {this.props.content.map(function (entry, index) {
                             return (
-                                <Entry key={index} index={index} total={num_entries} entry={entry}/>
+                                <Entry key={index} index={index} total={numEntries} entry={entry}/>
                             );
                         })}
                     </div>

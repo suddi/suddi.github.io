@@ -35,11 +35,11 @@ const Entry = React.createClass({
 
 const References = React.createClass({
     propTypes: {
-        content: ResumePropTypes.references_set
+        content: ResumePropTypes.referencesSet
     },
 
     render: function () {
-        const carousel_config = {
+        const carouselConfig = {
             autoplay: true,
             decorators: [],
             framePadding: '10px',
@@ -58,9 +58,9 @@ const References = React.createClass({
                         <div className='ten columns flex-container'>
                             <div className='flexslider'>
                                 <Carousel
-                                    autoplay={carousel_config.autoplay}
-                                    decorators={carousel_config.decorators}
-                                    wrapAround={carousel_config.wrapAround}>
+                                    autoplay={carouselConfig.autoplay}
+                                    decorators={carouselConfig.decorators}
+                                    wrapAround={carouselConfig.wrapAround}>
                                     {this.props.content.map(function (entry, index) {
                                         return (
                                             <Entry key={index} entry={entry}/>

@@ -32,7 +32,7 @@ const Entry = React.createClass({
 
 const Education = React.createClass({
     propTypes: {
-        content: ResumePropTypes.education_set
+        content: ResumePropTypes.educationSet
     },
 
     render: function () {

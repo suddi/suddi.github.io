@@ -20,7 +20,7 @@ const Action = React.createClass({
                             <span className='lead'>Example</span>
                         </p>
                     </div>
-                    <div className='three columns action'></div>
+                    <div className='three columns action'/>
                 </div>
             </section>
         );

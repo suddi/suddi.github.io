@@ -50,7 +50,11 @@ const Entry = React.createClass({
     render: function () {
         return (
             <li>
-                <span className={'bar-expand percentage' + this.props.entry.level} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} style={this.state.style}></span>
+                <span
+                    className={'bar-expand percentage' + this.props.entry.level}
+                    onMouseEnter={this.handleMouseEnter}
+                    onMouseLeave={this.handleMouseLeave}
+                    style={this.state.style}/>
                 <em>{this.props.entry.name}</em>
             </li>
         );
@@ -60,7 +64,7 @@ const Entry = React.createClass({
 const Skill = React.createClass({
     propTypes: {
         title: PropTypes.string.isRequired,
-        content: ResumePropTypes.languages_set,
+        content: ResumePropTypes.languagesSet,
         summary: PropTypes.arrayOf(
             PropTypes.string
         ).isRequired
@@ -93,23 +97,23 @@ const Skill = React.createClass({
 const Skills = React.createClass({
     propTypes: {
         content: PropTypes.shape({
-            skills: ResumePropTypes.skills_set,
-            languages: ResumePropTypes.languages_set
+            skills: ResumePropTypes.skillsSet,
+            languages: ResumePropTypes.languagesSet
         }).isRequired
     },
 
     render: function () {
-        const programming_summary = [
+        const programmingSummary = [
             'Worked primarily with JavaScript, Python and C++, with frameworks such as Express.js, Koa.js, React.js, Django and Flask.',
             'Interested in functional programming and serverless architectures, exploring with Erlang and AWS Lambda respectively.'
         ];
-        const database_summary = [
+        const databaseSummary = [
             'Experienced in both SQL and NoSQL, having worked in companies making use of DynamoDB, MongoDB, PostgreSQL and Aurora RDS flavour of MySQL, ' +
             'with personal further projects utilizing RethinkDB'
         ];
 
-        const programming_skills = filterSkills(this.props.content.skills, 'programming');
-        const database_skills = filterSkills(this.props.content.skills, 'database');
+        const programmingSkills = filterSkills(this.props.content.skills, 'programming');
+        const databaseSkills = filterSkills(this.props.content.skills, 'database');
         return (
             <section id='skill'>
                 <div className='row skill'>
@@ -119,8 +123,8 @@ const Skills = React.createClass({
                         </h1>
                     </div>
                     <div className='ten columns main-col'>
-                        <Skill title='Programming Languages' content={programming_skills} summary={programming_summary}/>
-                        <Skill title='Database Systems' content={database_skills} summary={database_summary}/>
+                        <Skill title='Programming Languages' content={programmingSkills} summary={programmingSummary}/>
+                        <Skill title='Database Systems' content={databaseSkills} summary={databaseSummary}/>
                         {/*
                             <Skill title='Languages' content={this.props.content.languages}/>
                         */}

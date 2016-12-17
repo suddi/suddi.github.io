@@ -20,7 +20,7 @@ const Banner = React.createClass({
                     */}
                     <br/>
                     <hr/>
-                    <SocialMedia ul_class='social' profiles={this.props.basics.profiles}/>
+                    <SocialMedia ulClass='social' profiles={this.props.basics.profiles}/>
                 </div>
             </div>
         );

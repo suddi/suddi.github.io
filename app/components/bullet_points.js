@@ -6,7 +6,7 @@ const ResumePropTypes = require('../prop_types/resume');
 
 const BulletPoints = React.createClass({
     propTypes: {
-        points: ResumePropTypes.bullet_points
+        points: ResumePropTypes.bulletPoints
     },
 
     render: function () {

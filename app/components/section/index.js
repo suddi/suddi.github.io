@@ -14,16 +14,16 @@ const Footer = require('./footer');
 const Section = React.createClass({
     propTypes: {
         basics: ResumePropTypes.basics,
-        work: ResumePropTypes.work_set,
-        education: ResumePropTypes.education_set,
-        skills: ResumePropTypes.skills_set,
-        languages: ResumePropTypes.languages_set,
-        portfolio: ResumePropTypes.publications_set,
-        references: ResumePropTypes.references_set
+        work: ResumePropTypes.workSet,
+        education: ResumePropTypes.educationSet,
+        skills: ResumePropTypes.skillsSet,
+        languages: ResumePropTypes.languagesSet,
+        portfolio: ResumePropTypes.publicationsSet,
+        references: ResumePropTypes.referencesSet
     },
 
     render: function () {
-        const skills_content = {
+        const skillsContent = {
             skills: this.props.skills,
             languages: this.props.languages
         };
@@ -33,7 +33,7 @@ const Section = React.createClass({
                 <About content={this.props.basics}/>
                 <Work content={this.props.work}/>
                 <Education content={this.props.education}/>
-                <Skills content={skills_content}/>
+                <Skills content={skillsContent}/>
                 <Portfolio content={this.props.portfolio}/>
                 <References content={this.props.references}/>
                 <Footer content={this.props.basics}/>

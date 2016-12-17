@@ -34,12 +34,17 @@ const Modal = React.createClass({
                     <h5>{_name}</h5>
                     <p>{this.props.entry.summary}</p>
                     <span className='categories'>
-                        <i className='fa fa-tag'></i>
+                        <i className='fa fa-tag'/>
                         {tools}
                     </span>
                 </div>
                 <div className='link-box'>
-                    <a href={this.props.entry.website} target='_blank'>Details</a>
+                    <a
+                        href={this.props.entry.website}
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        Details
+                    </a>
                     <a className='popup-modal-dismiss' onClick={this.props.onRequestClose}>Close</a>
                 </div>
             </ReactModal>

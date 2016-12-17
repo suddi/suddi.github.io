@@ -23,7 +23,7 @@ module.exports = {
                 thumb: 'public/images/portfolio/thumb/cgs.jpg',
                 modal: 'public/images/portfolio/modal/cgs.png'
             },
-            'TweetIndex': {
+            TweetIndex: {
                 thumb: 'public/images/portfolio/thumb/tweetindex.jpg',
                 modal: 'public/images/portfolio/modal/tweetindex.png'
             },
@@ -31,7 +31,7 @@ module.exports = {
                 thumb: 'public/images/portfolio/thumb/heatmap.jpg',
                 modal: 'public/images/portfolio/modal/heatmap.png'
             },
-            'zerohm': {
+            zerohm: {
                 thumb: 'public/images/portfolio/thumb/zerohm.jpg',
                 modal: 'public/images/portfolio/modal/zerohm.jpg'
             },
@@ -47,11 +47,11 @@ module.exports = {
                 thumb: 'public/images/portfolio/thumb/npm.jpg',
                 modal: 'public/images/portfolio/modal/npm.png'
             },
-            'dockerfiles': {
+            dockerfiles: {
                 thumb: 'public/images/portfolio/thumb/docker.jpg',
                 modal: 'public/images/portfolio/modal/docker.jpg'
             },
-            'SimpleSudoku': {
+            SimpleSudoku: {
                 thumb: 'public/images/portfolio/thumb/sudoku.jpg',
                 modal: 'public/images/portfolio/modal/sudoku.png'
             }

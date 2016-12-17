@@ -5,12 +5,12 @@ const PropTypes = React.PropTypes;
 
 const ResumePropTypes = require('../prop_types/resume');
 
-function mapIcon(social_media) {
-    const media = social_media.replace(/ /g, '-');
-    switch (social_media) {
+function mapIcon(socialMedia) {
+    const media = socialMedia.replace(/ /g, '-');
+    switch (socialMedia) {
         case 'email':
             return (
-                <i className={'fa fa-envelope'}></i>
+                <i className={'fa fa-envelope'}/>
             );
         case 'quora':
             return (
@@ -20,20 +20,20 @@ function mapIcon(social_media) {
             );
         default:
             return (
-                <i className={'fa fa-' + media}></i>
+                <i className={'fa fa-' + media}/>
             );
     }
 }
 
 const SocialMedia = React.createClass({
     propTypes: {
-        ul_class: PropTypes.string.isRequired,
+        ulClass: PropTypes.string.isRequired,
         profiles: ResumePropTypes.profiles
     },
 
     render: function () {
         return (
-            <ul className={this.props.ul_class}>
+            <ul className={this.props.ulClass}>
                 {this.props.profiles.map(function (profile, index) {
                     const icon = mapIcon(profile.network.toLowerCase());
                     return (

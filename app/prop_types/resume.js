@@ -32,7 +32,7 @@ module.exports.basics = PropTypes.shape({
     profiles: module.exports.profiles
 }).isRequired;
 
-module.exports.bullet_points = PropTypes.arrayOf(
+module.exports.bulletPoints = PropTypes.arrayOf(
     PropTypes.string
 ).isRequired;
 
@@ -43,9 +43,9 @@ module.exports.work = PropTypes.shape({
     startDate: PropTypes.string.isRequired,
     endDate: PropTypes.string.isRequired,
     summary: PropTypes.string.isRequired,
-    highlights: module.exports.bullet_points
+    highlights: module.exports.bulletPoints
 });
-module.exports.work_set = PropTypes.arrayOf(
+module.exports.workSet = PropTypes.arrayOf(
     module.exports.work
 ).isRequired;
 
@@ -56,9 +56,9 @@ module.exports.volunteer = PropTypes.shape({
     startDate: PropTypes.string.isRequired,
     endDate: PropTypes.string.isRequired,
     summary: PropTypes.string.isRequired,
-    highlights: module.exports.bullet_points
+    highlights: module.exports.bulletPoints
 });
-module.exports.volunteer_set = PropTypes.arrayOf(
+module.exports.volunteerSet = PropTypes.arrayOf(
     module.exports.volunteer
 ).isRequired;
 
@@ -70,9 +70,9 @@ module.exports.education = PropTypes.shape({
     endDate: PropTypes.string.isRequired,
     gpa: PropTypes.string.isRequired,
     summary: PropTypes.string.isRequired,
-    courses: module.exports.bullet_points
+    courses: module.exports.bulletPoints
 });
-module.exports.education_set = PropTypes.arrayOf(
+module.exports.educationSet = PropTypes.arrayOf(
     module.exports.education
 ).isRequired;
 
@@ -82,7 +82,7 @@ module.exports.awards = PropTypes.shape({
     awarder: PropTypes.string.isRequired,
     summary: PropTypes.string.isRequired
 });
-module.exports.awards_set = PropTypes.arrayOf(
+module.exports.awardsSet = PropTypes.arrayOf(
     module.exports.awards
 ).isRequired;
 
@@ -93,16 +93,16 @@ module.exports.publications = PropTypes.shape({
     website: PropTypes.string.isRequired,
     summary: PropTypes.string.isRequired
 });
-module.exports.publications_set = PropTypes.arrayOf(
+module.exports.publicationsSet = PropTypes.arrayOf(
     module.exports.publications
 ).isRequired;
 
 module.exports.skills = PropTypes.shape({
     name: PropTypes.string.isRequired,
     level: PropTypes.string.isRequired,
-    keywords: module.exports.bullet_points
+    keywords: module.exports.bulletPoints
 });
-module.exports.skills_set = PropTypes.arrayOf(
+module.exports.skillsSet = PropTypes.arrayOf(
     module.exports.skills
 ).isRequired;
 
@@ -110,15 +110,15 @@ module.exports.languages = PropTypes.shape({
     name: PropTypes.string.isRequired,
     level: PropTypes.string.isRequired
 });
-module.exports.languages_set = PropTypes.arrayOf(
+module.exports.languagesSet = PropTypes.arrayOf(
     module.exports.languages
 ).isRequired;
 
 module.exports.interests = PropTypes.shape({
     name: PropTypes.string.isRequired,
-    keywords: module.exports.bullet_points
+    keywords: module.exports.bulletPoints
 });
-module.exports.interests_set = PropTypes.arrayOf(
+module.exports.interestsSet = PropTypes.arrayOf(
     module.exports.interests
 ).isRequired;
 
@@ -126,6 +126,6 @@ module.exports.references = PropTypes.shape({
     name: PropTypes.string.isRequired,
     reference: PropTypes.string.isRequired
 });
-module.exports.references_set = PropTypes.arrayOf(
+module.exports.referencesSet = PropTypes.arrayOf(
     module.exports.references
 ).isRequired;
