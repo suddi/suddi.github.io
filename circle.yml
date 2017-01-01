@@ -1,5 +1,3 @@
 machine:
-    timezone:
-        Asia/Hong_Kong
     node:
-        version: "6"
+        version: '6.9.2'

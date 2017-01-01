@@ -7,7 +7,7 @@
 [![David](https://img.shields.io/david/dev/suddi/suddi.github.io.svg)](https://david-dm.org/suddi/suddi.github.io?type=dev)
 [![license](https://img.shields.io/github/license/suddi/suddi.github.io.svg?maxAge=2592000)](https://github.com/suddi/suddi.github.io/blob/master/LICENSE)
 
-suddi.github.io is a static single-page application developed using React.js. It uses the Ceevee template designed by Styleshout, ported over to React.js, and follows the JSON Resume schema to store a Curriculum Vitae in JSON format.
+`suddi.github.io` is a static single-page application developed using React.js. It uses the Ceevee template designed by Styleshout, ported over to React.js, and follows the JSON Resume schema to store a Curriculum Vitae in JSON format.
 
 ## Featured
 

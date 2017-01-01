@@ -29,7 +29,7 @@
   "scripts": {
     "bundle": "webpack --production --progress",
     "lint": "eslint .",
-    "prepush": "npm run lint",
+    "prepush": "npm test",
     "setup": ". ./setup.sh",
     "start": "webpack-dev-server --hot --inline",
     "test": "npm run lint",
