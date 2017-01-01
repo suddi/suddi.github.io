@@ -7,7 +7,7 @@
   "author": {
     "name": "Sudharshan Ravindran",
     "email": "suddir@gmail.com",
-    "url": ""
+    "url": "https://suddi.github.io"
   },
   "repository": {
     "type": "git",
@@ -23,16 +23,17 @@
     }
   ],
   "engines": {
-    "node": ">= 4.2.3",
-    "npm": ">= 2.14.7"
+    "node": ">= 4.0.0",
+    "npm": ">= 2.0.0"
   },
   "scripts": {
     "bundle": "webpack --production --progress",
     "lint": "eslint .",
     "prepush": "npm test",
+    "security-check": "nsp check --output summary",
     "setup": ". ./setup.sh",
     "start": "webpack-dev-server --hot --inline",
-    "test": "npm run lint",
+    "test": "npm run lint && npm run security-check",
     "watch": "webpack --watch"
   },
   "dependencies": {},
@@ -45,6 +46,7 @@
     "eslint-plugin-react": "^6.0.0",
     "husky": "^0.12.0",
     "moment": "^2.11.2",
+    "nsp": "^2.6.2",
     "nuka-carousel": "^2.0.0",
     "react": "^15.0.0",
     "react-addons-css-transition-group": "^15.0.0",
