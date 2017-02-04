@@ -45,7 +45,7 @@
     "eslint-config-suddi": "^3.0.0",
     "eslint-plugin-react": "^6.0.0",
     "husky": "^0.13.0",
-    "moment": "^2.0.0",
+    "moment": "^2.17.0",
     "nsp": "^2.0.0",
     "nuka-carousel": "^2.0.0",
     "react": "^15.0.0",
