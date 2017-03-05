@@ -5,19 +5,6 @@ const PropTypes = React.PropTypes;
 
 const ResumePropTypes = require('../../prop_types/resume');
 
-function filterSkills(input, filter) {
-    const reduced = input.reduce(function (previousValue, currentValue) {
-        return {
-            output: currentValue.keywords.indexOf(filter) === -1 ? previousValue.output : previousValue.output.concat(currentValue),
-            filter: filter
-        };
-    }, {
-        output: [],
-        filter: filter
-    });
-    return reduced.output;
-}
-
 const Entry = React.createClass({
     propTypes: {
         entry: ResumePropTypes.languages
