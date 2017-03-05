@@ -18,7 +18,7 @@ module.exports = {
     },
 
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
                 include: path.join(__dirname, 'app'),
@@ -28,24 +28,21 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.optimize.DedupePlugin(),
-        new webpack.DefinePlugin({
-            'process.env': {
-                NODE_ENV: JSON.stringify('production')
-            }
+        new webpack.LoaderOptionsPlugin({
+            minimize: true
         }),
         new webpack.optimize.UglifyJsPlugin({
-            minimize: true,
             compress: {
                 unused: true,
                 dead_code: true,
-                warnings: false,
+                warnings: true,
                 screw_ie8: true
             },
             compressor: {
                 warnings: false
-            }
+            },
+            minimize: true,
+            sourceMap: true
         })
     ]
 };

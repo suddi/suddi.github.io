@@ -12,20 +12,15 @@ const Entry = React.createClass({
     },
 
     render: function () {
-        const parts = this.props.entry.name.split(':');
-        const _name = parts[0];
-        const position = parts[1];
-        const company = parts[2];
-
         return (
             <div>
                 <blockquote>
                     <p>{this.props.entry.reference}</p>
                     <cite>
-                        {_name}
+                        {this.props.entry.name}
                         <br/>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        {position + ', ' + company}
+                        {this.props.entry.position + ', ' + this.props.entry.company}
                     </cite>
                 </blockquote>
             </div>

@@ -103,17 +103,6 @@ const Skills = React.createClass({
     },
 
     render: function () {
-        const programmingSummary = [
-            'Worked primarily with JavaScript, Python and C++, with frameworks such as Express.js, Koa.js, React.js, Django and Flask.',
-            'Interested in functional programming and serverless architectures, exploring with Erlang and AWS Lambda respectively.'
-        ];
-        const databaseSummary = [
-            'Experienced in both SQL and NoSQL, having worked in companies making use of DynamoDB, MongoDB, PostgreSQL and Aurora RDS flavour of MySQL, ' +
-            'with personal further projects utilizing RethinkDB'
-        ];
-
-        const programmingSkills = filterSkills(this.props.content.skills, 'programming');
-        const databaseSkills = filterSkills(this.props.content.skills, 'database');
         return (
             <section id='skill'>
                 <div className='row skill'>
@@ -123,8 +112,15 @@ const Skills = React.createClass({
                         </h1>
                     </div>
                     <div className='ten columns main-col'>
-                        <Skill title='Programming Languages' content={programmingSkills} summary={programmingSummary}/>
-                        <Skill title='Database Systems' content={databaseSkills} summary={databaseSummary}/>
+                        {this.props.content.skills.map(function (skill, index) {
+                            return (
+                                <Skill
+                                    key={index}
+                                    title={skill.title}
+                                    content={skill.skillDetails}
+                                    summary={skill.description}/>
+                            );
+                        })}
                         {/*
                             <Skill title='Languages' content={this.props.content.languages}/>
                         */}
