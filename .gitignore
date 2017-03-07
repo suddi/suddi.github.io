@@ -59,4 +59,5 @@ jspm_packages
 # CUSTOM
 # ------------------------------------------------------------------------------
 public/images/portfolio
+public/index.html
 resume.json
