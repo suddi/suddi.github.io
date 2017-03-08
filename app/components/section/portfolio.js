@@ -2,14 +2,13 @@
 
 const React = require('react');
 
-const config = require('../../config');
 const ResumePropTypes = require('../../prop_types/resume');
 const Random = require('../../utils/random');
 const Modal = require('./modal');
 
 const Entry = React.createClass({
     propTypes: {
-        entry: ResumePropTypes.publications
+        entry: ResumePropTypes.projects
     },
 
     getInitialState: function () {
@@ -31,20 +30,16 @@ const Entry = React.createClass({
     },
 
     render: function () {
-        const parts = this.props.entry.name.split(':');
-        const _name = parts[0];
-        const category = parts[1];
-        // const tools = parts[2];
-        // config.portfolio.image[_name].src
-
         return (
             <div className='columns portfolio-item'>
                 <div className='item-wrap' onClick={this.handleOpenModal}>
-                    <img src={config.portfolio.image[_name].thumb} alt={_name}/>
+                    <img
+                        src={this.props.entry.image.thumb}
+                        alt={this.props.entry.name}/>
                     <div className='overlay'>
                         <div className='portfolio-item-meta'>
-                            <h5>{_name}</h5>
-                            <p>{category}</p>
+                            <h5>{this.props.entry.name}</h5>
+                            <p>{this.props.entry.category}</p>
                         </div>
                     </div>
                     <div className='link-icon'>
@@ -59,7 +54,7 @@ const Entry = React.createClass({
 
 const Portfolio = React.createClass({
     propTypes: {
-        content: ResumePropTypes.publicationsSet
+        content: ResumePropTypes.projectsSet
     },
 
     render: function () {

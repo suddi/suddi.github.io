@@ -52,6 +52,12 @@ jspm_packages
 # Yarn Integrity file
 .yarn-integrity
 
+# Mac-specific file
+.DS_Store
+
 # ------------------------------------------------------------------------------
 # CUSTOM
 # ------------------------------------------------------------------------------
+public/images/portfolio
+public/index.html
+resume.json

@@ -1,0 +1,147 @@
+{
+    "basics": {
+        "name": "<FULL_NAME>",
+        "label": "<PROFESSION>",
+        "picture": "<PHOTO>",
+        "email": "<EMAIL_ADDRESS>",
+        "phone": "<PHONE_NUMBER>",
+        "website": "<WEBSITE>",
+        "summary": [
+            "<SUMMARY_1>",
+            "<SUMMARY_2>",
+            "<SUMMARY_3>"
+        ],
+        "location": {
+            "address": "<ADDRESS>",
+            "postalCode": "<POSTAL_CODE>",
+            "city": "<CITY>",
+            "countryCode": "<COUNTRY>",
+            "region": "<REGION>"
+        },
+        "profiles": [
+            {
+                "network": "<NETWORK>",
+                "username": "<USERNAME>",
+                "url": "<URL>"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "<COMPANY_NAME>",
+            "position": "<POSITION>",
+            "website": "<COMPANY_WEBSITE>",
+            "startDate": "<START_DATE>",
+            "endDate": "<END_DATE>",
+            "summary": "<SUMMARY>",
+            "highlights": [
+                "<HIGHTLIGHT_1>",
+                "<HIGHTLIGHT_2>",
+                "<HIGHTLIGHT_3>"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "<ORGANIZATION_NAME>",
+            "position": "<POSITION>",
+            "website": "<WEBSITE>",
+            "startDate": "<START_DATE>",
+            "endDate": "<END_DATE>",
+            "summary": "<SUMMARY>",
+            "highlights": [
+                "<HIGHTLIGHT_1>",
+                "<HIGHTLIGHT_2>",
+                "<HIGHTLIGHT_3>"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "<INSTITUTION_NAME>",
+            "area": "<AREA_OF_STUDY>",
+            "studyType": "<STUDY_TYPE>",
+            "startDate": "<START_DATE>",
+            "endDate": "<END_DATE>",
+            "gpa": "<GRADE_POINT_AVERAGE>",
+            "summary": "<SUMMARY>",
+            "courses": [
+                "<COURSE_1>",
+                "<COURSE_2>",
+                "<COURSE_3>"
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "title": "<AWARD_TITLE>",
+            "date": "<DATE>",
+            "awarder": "<AWARDER>",
+            "summary": "<SUMMARY>"
+        }
+    ],
+    "projects": [
+        {
+            "name": "<PUBLICATION_NAME>",
+            "publisher": "<PUBLISHER>",
+            "category": "<CATEGORY>",
+            "releaseDate": "<RELEASE_DATE>",
+            "website": "<WEBSITE>",
+            "summary": "<SUMMARY>",
+            "image": {
+                "modal": "<MODAL_IMAGE>",
+                "thumb": "<THUMBNAIL_IMAGE>"
+            },
+            "keywords": [
+                "<KEYWORD_1>",
+                "<KEYWORD_2>",
+                "<KEYWORD_3>"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "title": "<DESCRIPTION_TITLE>",
+            "description": [
+                "<DESCRIPTION_1>",
+                "<DESCRIPTION_2>",
+                "<DESCRIPTION_3>"
+            ],
+            "skillDetails": [
+                {
+                    "name": "<SKILL_NAME>",
+                    "level": "<SKILL_LEVEL>",
+                    "keywords": [
+                        "<KEYWORD_1>",
+                        "<KEYWORD_2>",
+                        "<KEYWORD_3>"
+                    ]
+                }
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "name": "<LANGUAGE_NAME>",
+            "level": "<LANGUAGE_LEVEL>"
+        }
+    ],
+    "interests": [
+        {
+            "name": "<INTEREST_NAME>",
+            "keywords": [
+                "<KEYWORD_1>",
+                "<KEYWORD_2>",
+                "<KEYWORD_3>"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "<REFERENCE_NAME>",
+            "position": "<POSITION>",
+            "company": "<COMPANY>",
+            "reference": "<SUMMARY>"
+        }
+    ]
+}

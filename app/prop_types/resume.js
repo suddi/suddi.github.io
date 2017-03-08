@@ -3,22 +3,50 @@
 const React = require('react');
 const PropTypes = React.PropTypes;
 
+// ----------------------------------------------------------------------------
+// COMPONENTS
+// ----------------------------------------------------------------------------
+
 module.exports.location = PropTypes.shape({
     address: PropTypes.string.isRequired,
     postalCode: PropTypes.string.isRequired,
     city: PropTypes.string.isRequired,
     countryCode: PropTypes.string.isRequired,
     region: PropTypes.string.isRequired
-});
+}).isRequired;
 
 module.exports.profile = PropTypes.shape({
     network: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired
-});
+}).isRequired;
 module.exports.profiles = PropTypes.arrayOf(
     module.exports.profile
 ).isRequired;
+
+module.exports.bulletPoints = PropTypes.arrayOf(
+    PropTypes.string
+).isRequired;
+
+module.exports.image = PropTypes.shape({
+    modal: PropTypes.string.isRequired,
+    thumb: PropTypes.string.isRequired
+}).isRequired;
+
+module.exports.description = PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: module.exports.bulletPoints
+});
+
+module.exports.descriptions = PropTypes.arrayOf(
+    module.exports.description
+).isRequired;
+
+// ----------------------------------------------------------------------------
+// PROP SETS
+// ----------------------------------------------------------------------------
+
+module.exports.navigation = PropTypes.object.isRequired;
 
 module.exports.basics = PropTypes.shape({
     name: PropTypes.string.isRequired,
@@ -27,14 +55,10 @@ module.exports.basics = PropTypes.shape({
     email: PropTypes.string.isRequired,
     phone: PropTypes.string.isRequired,
     website: PropTypes.string.isRequired,
-    summary: PropTypes.string.isRequired,
+    summary: module.exports.bulletPoints,
     location: module.exports.location,
     profiles: module.exports.profiles
 }).isRequired;
-
-module.exports.bulletPoints = PropTypes.arrayOf(
-    PropTypes.string
-).isRequired;
 
 module.exports.work = PropTypes.shape({
     company: PropTypes.string.isRequired,
@@ -86,21 +110,33 @@ module.exports.awardsSet = PropTypes.arrayOf(
     module.exports.awards
 ).isRequired;
 
-module.exports.publications = PropTypes.shape({
+module.exports.projects = PropTypes.shape({
     name: PropTypes.string.isRequired,
     publisher: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
     releaseDate: PropTypes.string.isRequired,
     website: PropTypes.string.isRequired,
-    summary: PropTypes.string.isRequired
+    summary: PropTypes.string.isRequired,
+    image: module.exports.image,
+    keywords: module.exports.bulletPoints
 });
-module.exports.publicationsSet = PropTypes.arrayOf(
-    module.exports.publications
+module.exports.projectsSet = PropTypes.arrayOf(
+    module.exports.projects
 ).isRequired;
 
-module.exports.skills = PropTypes.shape({
+module.exports.skillDetails = PropTypes.shape({
     name: PropTypes.string.isRequired,
     level: PropTypes.string.isRequired,
     keywords: module.exports.bulletPoints
+});
+module.exports.skillDetailsSet = PropTypes.arrayOf(
+    module.exports.skillDetails
+);
+
+module.exports.skills = PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: module.exports.bulletPoints,
+    skillDetails: module.exports.skillDetailsSet
 });
 module.exports.skillsSet = PropTypes.arrayOf(
     module.exports.skills
@@ -124,6 +160,8 @@ module.exports.interestsSet = PropTypes.arrayOf(
 
 module.exports.references = PropTypes.shape({
     name: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    company: PropTypes.string.isRequired,
     reference: PropTypes.string.isRequired
 });
 module.exports.referencesSet = PropTypes.arrayOf(

@@ -5,47 +5,48 @@
 const path = require('path');
 const webpack = require('webpack');
 
-module.exports = {
-    devtool: 'source-map',
+function getConfig() {
+    return {
+        devtool: 'source-map',
 
-    entry: [
-        path.join(__dirname, 'app/index.js')
-    ],
+        entry: [
+            path.join(__dirname, 'app/index.js')
+        ],
 
-    output: {
-        path: path.join(__dirname, 'public'),
-        filename: 'bundle.js'
-    },
+        output: {
+            path: path.join(__dirname, 'public'),
+            filename: 'bundle.js'
+        },
 
-    module: {
-        loaders: [
-            {
-                test: /\.js$/,
-                include: path.join(__dirname, 'app'),
-                loaders: ['babel-loader']
-            }
+        module: {
+            rules: [
+                {
+                    test: /\.js$/,
+                    include: path.join(__dirname, 'app'),
+                    loaders: ['babel-loader']
+                }
+            ]
+        },
+
+        plugins: [
+            new webpack.LoaderOptionsPlugin({
+                minimize: true
+            }),
+            new webpack.optimize.UglifyJsPlugin({
+                compress: {
+                    unused: true,
+                    dead_code: true,
+                    warnings: true,
+                    screw_ie8: true
+                },
+                compressor: {
+                    warnings: false
+                },
+                minimize: true,
+                sourceMap: true
+            })
         ]
-    },
+    };
+}
 
-    plugins: [
-        new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.optimize.DedupePlugin(),
-        new webpack.DefinePlugin({
-            'process.env': {
-                NODE_ENV: JSON.stringify('production')
-            }
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            minimize: true,
-            compress: {
-                unused: true,
-                dead_code: true,
-                warnings: false,
-                screw_ie8: true
-            },
-            compressor: {
-                warnings: false
-            }
-        })
-    ]
-};
+module.exports = getConfig();

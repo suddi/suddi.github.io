@@ -15,7 +15,10 @@ const Loading = require('./loading');
 const Home = React.createClass({
     propTypes: {
         route: PropTypes.shape({
-            resume: PropTypes.string.isRequired
+            config: PropTypes.shape({
+                resumePath: PropTypes.string.isRequired,
+                navigation: PropTypes.object.isRequired
+            }).isRequired
         }).isRequired
     },
 
@@ -27,7 +30,7 @@ const Home = React.createClass({
 
     componentDidMount: function () {
         return request
-            .get(this.props.route.resume)
+            .get(this.props.route.config.resumePath)
             .end(function (error, response) {
                 return error ? error : this.setState({
                     resume: response.body
@@ -39,7 +42,7 @@ const Home = React.createClass({
         return (
             <div>
                 <Header>
-                    <Navigation/>
+                    <Navigation navigation={this.props.route.config.navigation}/>
                     <Banner basics={this.state.resume.basics}/>
                     <ScrollDown/>
                 </Header>
@@ -49,7 +52,7 @@ const Home = React.createClass({
                     education={this.state.resume.education}
                     skills={this.state.resume.skills}
                     languages={this.state.resume.languages}
-                    portfolio={this.state.resume.publications}
+                    portfolio={this.state.resume.projects}
                     references={this.state.resume.references}/>
             </div>
         );
