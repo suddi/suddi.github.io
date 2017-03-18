@@ -40,4 +40,4 @@ To bundle for deployment:
 npm run bundle
 ````
 
-You can view the live site at [suddi.io](https://suddi.io)
+You can view the live site at [suddi.io](https://suddi.io) 
