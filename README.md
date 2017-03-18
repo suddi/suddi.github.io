@@ -32,7 +32,7 @@ npm run bundle
 
 npm start
 ````
-You can view the site at `http://localhost:8081`.
+You can view the site at [`http://localhost:8081`](http://localhost:8081).
 
 To bundle for deployment:
 
