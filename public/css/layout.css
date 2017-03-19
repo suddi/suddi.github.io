@@ -958,7 +958,7 @@ call-to-action .button {
 /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
 /* Suggested container for slide animation setups. Can replace this with your own */
-.flex-container { zoom: 1; position: relative; }
+.flex-container { zoom: 1; position: relative; width: 82%; }
 
 /* Clearfix for .slides */
 .slides:before,

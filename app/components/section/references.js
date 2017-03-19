@@ -50,7 +50,7 @@ const References = React.createClass({
                                 <span>References</span>
                             </h1>
                         </div>
-                        <div className='ten columns flex-container'>
+                        <div className='columns flex-container'>
                             <div className='flexslider'>
                                 <Carousel
                                     autoplay={carouselConfig.autoplay}
