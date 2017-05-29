@@ -1,5 +1,7 @@
 # suddi.github.io
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/suddi/suddi.github.io.svg)](https://greenkeeper.io/)
+
 [![Website](https://img.shields.io/website-up-down-green-red/http/suddi.github.io.svg?maxAge=2592000)](https://suddi.github.io)
 [![CircleCI](https://img.shields.io/circleci/project/github/suddi/suddi.github.io.svg)](https://circleci.com/gh/suddi/suddi.github.io)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/69d83996bf574c919ae2d0ce800bb78e)](https://www.codacy.com/app/suddir/suddi-github-io?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=suddi/suddi.github.io&amp;utm_campaign=Badge_Grade)
