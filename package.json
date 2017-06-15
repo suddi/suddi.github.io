@@ -50,7 +50,7 @@
     "react": "^15.0.0",
     "react-addons-css-transition-group": "^15.0.0",
     "react-dom": "^15.0.0",
-    "react-modal": "^1.0.0",
+    "react-modal": "^2.0.0",
     "react-router": "^4.1.1",
     "superagent": "^3.0.0",
     "webpack": "^2.0.0",
