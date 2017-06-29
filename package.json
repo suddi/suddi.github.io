@@ -41,7 +41,7 @@
     "babel-loader": "^7.0.0",
     "babel-preset-react": "^6.0.0",
     "eslint": "^3.0.0",
-    "eslint-config-suddi": "^3.0.0",
+    "eslint-config-suddi": "^4.0.0",
     "eslint-plugin-react": "^7.0.1",
     "husky": "^0.13.0",
     "moment": "^2.17.0",
