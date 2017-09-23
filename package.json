@@ -2,7 +2,7 @@
   "name": "suddi.github.io",
   "private": true,
   "description": "Sudharshan Ravindran personal site",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "homepage": "https://suddi.github.io",
   "author": {
     "name": "Sudharshan Ravindran",
@@ -30,7 +30,7 @@
     "bundle": "webpack -p --progress",
     "deploy": "webpack -p --progress --config webpack.deploy.js",
     "lint": "eslint .",
-    "prepush": "npm test",
+    "prepush": "npm run lint && npm run security-check",
     "security-check": "nsp check --output summary",
     "start": "webpack-dev-server --hot --inline",
     "test": "npm run lint && npm run security-check && npm run bundle"
