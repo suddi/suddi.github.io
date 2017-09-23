@@ -12,7 +12,7 @@ const Link = React.createClass({
     render: function () {
         return (
             <li>
-                <a className='smoothscroll' href={'#' + this.props.link}>{this.props.name}</a>
+                <a className='smoothscroll' href={`#${this.props.link}`}>{this.props.name}</a>
             </li>
         );
     }

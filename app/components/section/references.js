@@ -20,7 +20,7 @@ const Entry = React.createClass({
                         {this.props.entry.name}
                         <br/>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        {this.props.entry.position + ', ' + this.props.entry.company}
+                        {`${this.props.entry.position}, ${this.props.entry.company}`}
                     </cite>
                 </blockquote>
             </div>
