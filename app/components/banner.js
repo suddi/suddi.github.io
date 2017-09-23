@@ -17,9 +17,7 @@ const Banner = React.createClass({
                     <h1 className='responsive-headline'>
                         {this.props.basics.name}
                     </h1>
-                    {/*
-                        <h3>{this.props.basics.summary}</h3>
-                    */}
+                    {/* <h3>{this.props.basics.summary}</h3> */}
                     <br/>
                     <hr/>
                     <SocialMedia ulClass='social' profiles={this.props.basics.profiles}/>

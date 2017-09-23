@@ -37,11 +37,11 @@ const About = React.createClass({
                                     <br/>
                                     <span>{this.props.content.location.countryCode}</span>
                                     <br/>
-                                    <a href={'skype:' + this.props.content.phone}>
+                                    <a href={`skype:${this.props.content.phone}`}>
                                         <span>{this.props.content.phone}</span>
                                     </a>
                                     <br/>
-                                    <a href={'mailto:' + this.props.content.email}>
+                                    <a href={`mailto:${this.props.content.email}`}>
                                         <span>{this.props.content.email}</span>
                                     </a>
                                 </p>

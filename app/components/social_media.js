@@ -20,7 +20,7 @@ function mapIcon(socialMedia) {
             );
         default:
             return (
-                <i className={'fa fa-' + media}/>
+                <i className={`fa fa-${media}`}/>
             );
     }
 }
