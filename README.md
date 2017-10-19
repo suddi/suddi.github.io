@@ -17,6 +17,7 @@ The site has been shown as demo React.js project on the following sites:
 
 * [react.rocks](https://react.rocks/example/JSON_Resume)
 * [爱前端](http://www.17shulihua.com/archives/404)
+* [reactjsexample](https://reactjsexample.com/a-static-single-page-application-resume-builder-developed-using-react-js/)
 
 ## Installation
 
