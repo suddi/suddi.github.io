@@ -22,6 +22,7 @@
       "url": "https://github.com/alberthuynh91/suddi.github.io/LICENSE"
     }
   ],
+
   "scripts": {
     "bundle": "webpack -p --progress",
     "deploy": "webpack -p --progress --config webpack.deploy.js",
@@ -29,9 +30,7 @@
     "prepush": "npm run lint && npm run security-check",
     "security-check": "nsp check --output summary",
     "start": "webpack-dev-server --hot --inline",
-    "test": "npm run lint && npm run security-check && npm run bundle",
-    "postinstall": "npm run build",
-    "heroku-postbuild": "npm run build"
+    "test": "npm run lint && npm run security-check && npm run bundle"
   },
   "dependencies": {
     "babel-core": "^6.0.0",
