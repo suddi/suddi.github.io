@@ -186,7 +186,7 @@
         {
             "title": "Programming Languages",
             "description": [
-                "Worked primarily with JavaScript and Golang, with frameworks such as Express.js and React.js"
+                "Worked primarily with languages used in web techonologies like JavaScript and Golang, with frameworks such as Express.js and React.js"
             ],
             "skillDetails": [
                 {
@@ -225,6 +225,23 @@
                     "level": "80",
                     "keywords": [
                         "mobx"
+                    ]
+                },
+                {
+                    "name": "HTML",
+                    "level": "90",
+                    "keywords": [
+                        "html",
+                        "html5"
+                    ]
+                },
+                {
+                    "name": "CSS",
+                    "level": "90",
+                    "keywords": [
+                        "css",
+                        "css3",
+                        "sass"
                     ]
                 }
             ]

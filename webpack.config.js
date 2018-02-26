@@ -5,6 +5,8 @@
 const path = require('path');
 const webpack = require('webpack');
 
+const port = process.env.PORT || 8080;
+
 function getConfig() {
     return {
         devtool: 'source-map',
@@ -12,6 +14,11 @@ function getConfig() {
         entry: [
             path.join(__dirname, 'app/index.js')
         ],
+
+        devServer: {
+            inline: true,
+            port: port
+        },
 
         output: {
             path: path.join(__dirname, 'public'),
