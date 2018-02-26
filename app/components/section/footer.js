@@ -20,8 +20,8 @@ const Footer = React.createClass({
                             <li>
                                 This site is developed in React.js by&nbsp;
                                 <a
-                                    href='https://suddi.github.io'
-                                    title='Sudharshan Ravindran'
+                                    href='https://whatupbert.com/'
+                                    title='Albert Huynh'
                                     target='_blank'
                                     rel='noopener noreferrer'>
                                     Sudharshan Ravindran

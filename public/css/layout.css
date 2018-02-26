@@ -1176,6 +1176,7 @@ footer a:hover, footer a:focus { color: #11ABB0; }
 footer .copyright {
     margin: 0;
     padding: 0;
+    font-size: 11px;
  }
 footer .copyright li {
     display: inline-block;

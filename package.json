@@ -1,25 +1,25 @@
 {
-  "name": "suddi.github.io",
+  "name": "whatupbert.com",
   "private": true,
-  "description": "Sudharshan Ravindran personal site",
+  "description": "Albert Huynh personal site",
   "version": "1.2.2",
   "homepage": "https://suddi.github.io",
   "author": {
-    "name": "Sudharshan Ravindran",
-    "email": "suddi@mail.io",
-    "url": "https://suddi.github.io"
+    "name": "Albert Huynh",
+    "email": "alberthuynh91@gmail.com",
+    "url": "https://whatupbert.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/suddi/suddi.github.io"
+    "url": "https://github.com/alberthuynh91/suddi.github.io"
   },
   "bugs": {
-    "url": "https://github.com/suddi/suddi.github.io/issues"
+    "url": "https://github.com/alberthuynh91/suddi.github.io/issues"
   },
   "licenses": [
     {
       "type": "Apache-2.0",
-      "url": "https://github.com/suddi/suddi.github.io/LICENSE"
+      "url": "https://github.com/alberthuynh91/suddi.github.io/LICENSE"
     }
   ],
   "engines": {
