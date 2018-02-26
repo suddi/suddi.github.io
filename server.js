@@ -9,6 +9,6 @@ var server = app.listen(app.get('port'), function () {
 });
 
 app.use(express.static(path.join(__dirname, 'app/index.js')));
-app.set('port', 9000);
-// App.set('port', process.env.PORT || 9000);
+// App.set('port', 9000);
+app.set('port', process.env.PORT || 9000);
 
