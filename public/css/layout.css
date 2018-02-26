@@ -81,7 +81,8 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/background.jpg) no-repeat top center;
+   /* background: #161415 url(../images/background.jpg) no-repeat top center; */
+   background: rgba(22, 20, 21, 0.5)url('https://c1.staticflickr.com/5/4271/34817046931_d5da9cf1b6_h.jpg') no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
