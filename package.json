@@ -22,10 +22,6 @@
       "url": "https://github.com/alberthuynh91/suddi.github.io/LICENSE"
     }
   ],
-  "engines": {
-    "node": ">= 4.0.0",
-    "npm": ">= 2.0.0"
-  },
   "scripts": {
     "bundle": "webpack -p --progress",
     "deploy": "webpack -p --progress --config webpack.deploy.js",
