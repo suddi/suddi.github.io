@@ -11,7 +11,9 @@ function getConfig() {
     return {
         devtool: 'source-map',
 
-        entry: './app/index.js',
+        entry: [
+            path.join(__dirname, 'app/index.js')
+        ],
 
         devServer: {
             inline: true,
@@ -29,25 +31,6 @@ function getConfig() {
                     test: /\.js$/,
                     include: path.join(__dirname, 'app'),
                     loaders: ['babel-loader']
-                }
-            ],
-            loaders: [
-                {
-                    test: /\.js$/,
-                    exclude: /node_modules/,
-                    loader: 'babel',
-                    query: {
-                        presets: ['es2015']
-                    }
-                },
-                {
-                    test: /\.less$/,
-                    loader: 'style!css!less'
-                },
-                {
-                    test: /\.(jpg|png|gif)$/,
-                    include: /img/,
-                    loader: 'url'
                 }
             ]
         },
