@@ -64,9 +64,9 @@
             "endDate": "Present",
             "summary": "San Mateo, CA",
             "highlights": [
-                "<HIGHTLIGHT_1>",
-                "<HIGHTLIGHT_2>",
-                "<HIGHTLIGHT_3>"
+                "Built Fanatics Promo Tool used in creating new promotions for Fanatics.com e-commerce site",
+                "Implemented various features on Fanatics Internal Tool from end to end including features used in Experimentation and Content Editor",
+                "Technologies I have worked with: React, NodeJS, Redux, Mobx, Elasticsearch, Golang, MySQL"
             ]
         },
         {
@@ -79,7 +79,8 @@
             "highlights": [
                 "Created modular HTML templates that are clear, concise, and scalable reducing the complexity of processes in campaigns",
                 "Utilized version control with codebase keeping code safe and maintainable",
-                "Created SQL queries allowing for data retrieval for use in application"
+                "Created SQL queries allowing for data retrieval for use in application",
+                "Technologies I worked with: HTML, CSS, MySQL, Git"
             ]
         }
     ],
@@ -211,7 +212,7 @@
                 },
                 {
                     "name": "AngularJS",
-                    "level": "70",
+                    "level": "60",
                     "keywords": [
                         "angular",
                         "angularjs"
@@ -219,7 +220,7 @@
                 },
                 {
                     "name": "Redux",
-                    "level": "80",
+                    "level": "75",
                     "keywords": [
                         "react-redux",
                         "redux"
@@ -227,7 +228,7 @@
                 },
                 {
                     "name": "MobX",
-                    "level": "80",
+                    "level": "75",
                     "keywords": [
                         "mobx"
                     ]
@@ -242,7 +243,7 @@
                 },
                 {
                     "name": "CSS",
-                    "level": "90",
+                    "level": "80",
                     "keywords": [
                         "css",
                         "css3",
