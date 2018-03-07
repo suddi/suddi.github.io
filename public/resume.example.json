@@ -60,7 +60,7 @@
             "company": "Fanatics",
             "position": "Software Engineer",
             "website": "https://www.fanatics.com/",
-            "startDate": "June 2016",
+            "startDate": "June 15, 2016",
             "endDate": "Present",
             "summary": "San Mateo, CA",
             "highlights": [
@@ -73,8 +73,8 @@
             "company": "Nexstra",
             "position": "Software Engineer",
             "website": "http://www.nexstra.com/",
-            "startDate": "Jul 2014",
-            "endDate": "Jan 2016",
+            "startDate": "July 12, 2014",
+            "endDate": "January, 5 2016",
             "summary": "Danville, CA",
             "highlights": [
                 "Created modular HTML templates that are clear, concise, and scalable reducing the complexity of processes in campaigns",
@@ -104,8 +104,8 @@
             "institution": "California State University, East Bay",
             "area": "Bachelor of Science (BS), Computer Science",
             "studyType": "<STUDY_TYPE>",
-            "startDate": "Sept 2009",
-            "endDate": "June 2013",
+            "startDate": "September 20, 2009",
+            "endDate": "June 20, 2013",
             "gpa": "<GRADE_POINT_AVERAGE>",
             "summary": "Hayward, CA",
             "courses": [
@@ -118,8 +118,8 @@
             "institution": "Hack Reactor",
             "area": "Computer Software Engineering",
             "studyType": "<STUDY_TYPE>",
-            "startDate": "Jan 2016",
-            "endDate": "Apr 2016",
+            "startDate": "January 20, 2016",
+            "endDate": "April 20, 2016",
             "gpa": "<GRADE_POINT_AVERAGE>",
             "summary": "San Francisco, CA",
             "courses": [
