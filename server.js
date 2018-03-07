@@ -2,13 +2,18 @@
 var path = require('path');
 var express = require('express');
 
-var app = express();
+module.exports = {
+    app: function () {
+        const app = express();
+        const indexPath = path.join(__dirname, './index.html');
+        const publicPath = express.static(path.join(__dirname, './public'));
 
-var server = app.listen(app.get('port'), function () {
-    console.log('listening on port ', server.address().port);
-});
+        app.use('/public', publicPath);
+        app.get('/', function (_, res) {
+            res.sendFile(indexPath);
+        });
 
-app.use(express.static(path.join(__dirname, 'app/index.js')));
-// App.set('port', 9000);
-app.set('port', process.env.PORT || 9000);
+        return app;
+    }
+}
 
