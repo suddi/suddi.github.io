@@ -30,7 +30,7 @@
     "security-check": "nsp check --output summary",
     "start": "webpack-dev-server --hot --inline",
     "test": "npm run lint && npm run security-check && npm run bundle",
-    "heroku-postbuild": "webpack -p --progress --config webpack.deploy.js"
+    "heroku-postbuild": "webpack -p --progress"
   },
   "dependencies": {
     "babel-core": "^6.0.0",
