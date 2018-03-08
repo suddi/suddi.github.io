@@ -1,42 +1,40 @@
 {
-  "name": "suddi.github.io",
+  "name": "AlbertHuynhResume",
   "private": true,
-  "description": "Sudharshan Ravindran personal site",
+  "description": "Albert Huynh Resume Page",
   "version": "1.2.2",
-  "homepage": "https://suddi.github.io",
+  "homepage": "http://yo.whatupbert.com",
   "author": {
-    "name": "Sudharshan Ravindran",
-    "email": "suddi@mail.io",
-    "url": "https://suddi.github.io"
+    "name": "Albert Huynh",
+    "email": "alberthuynh91@gmail.com",
+    "url": "http://yo.whatupbert.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/suddi/suddi.github.io"
+    "url": "https://github.com/alberthuynh91/alberthuynh-personal"
   },
   "bugs": {
-    "url": "https://github.com/suddi/suddi.github.io/issues"
+    "url": "https://github.com/alberthuynh91/alberthuynh-personal/issues"
   },
   "licenses": [
     {
       "type": "Apache-2.0",
-      "url": "https://github.com/suddi/suddi.github.io/LICENSE"
+      "url": "https://github.com/alberthuynh91/alberthuynh-personal/LICENSE"
     }
   ],
-  "engines": {
-    "node": ">= 4.0.0",
-    "npm": ">= 2.0.0"
-  },
   "scripts": {
     "bundle": "webpack -p --progress",
     "deploy": "webpack -p --progress --config webpack.deploy.js",
     "lint": "eslint .",
     "prepush": "npm run lint && npm run security-check",
     "security-check": "nsp check --output summary",
-    "start": "webpack-dev-server --hot --inline",
-    "test": "npm run lint && npm run security-check && npm run bundle"
+    "startold": "webpack-dev-server --hot --inline",
+    "test": "npm run lint && npm run security-check && npm run bundle",
+    "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
+    "start": "node ./app/app.js",
+    "postinstall": "npm run build"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.0.0",
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.0.0",
@@ -58,6 +56,9 @@
     "webpack": "^3.0.0",
     "webpack-dev-server": "2.7.1",
     "webpack-s3-plugin": "^0.9.0"
+  },
+  "devDependencies": {
+    "webpack-hot-middleware": "^2.21.2"
   },
   "eslintConfig": {
     "extends": "suddi/frontend",

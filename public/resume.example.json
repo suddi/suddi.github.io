@@ -1,43 +1,86 @@
 {
     "basics": {
-        "name": "<FULL_NAME>",
-        "label": "<PROFESSION>",
-        "picture": "<PHOTO>",
-        "email": "<EMAIL_ADDRESS>",
-        "phone": "<PHONE_NUMBER>",
-        "website": "<WEBSITE>",
+        "name": "Albert Huynh",
+        "label": "Software Engineer",
+        "picture": "https://c1.staticflickr.com/5/4711/39592272895_b43a8408db_o.jpg",
+        "email": "alberthuynh91@gmail.com   ",
+        "phone": "5103141803",
+        "website": "https://yo.whatupbert.com/",
         "summary": [
-            "<SUMMARY_1>",
-            "<SUMMARY_2>",
-            "<SUMMARY_3>"
+            "Thoughtful and articulate full-stack developer with a strong background in Javascript. Thrives on the fast pace in the tech industry and enjoys problem solving. Always ready to dive head first into any project and enjoys learning new technologies. Extremely passionate in developing meaningful applications that have real world impact.",
+            "Excellent written and verbal communication skills. Interested in challenging technical roles building applications."
         ],
         "location": {
             "address": "<ADDRESS>",
-            "postalCode": "<POSTAL_CODE>",
-            "city": "<CITY>",
-            "countryCode": "<COUNTRY>",
+            "postalCode": "94587",
+            "city": "San Francisco, CA",
+            "countryCode": "United States",
             "region": "<REGION>"
         },
         "profiles": [
             {
-                "network": "<NETWORK>",
-                "username": "<USERNAME>",
-                "url": "<URL>"
+                "network": "Email",
+                "username": "alberthuyh91",
+                "url": "mailto:alberthuynh91@gmail.com"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "alberthuynh91",
+                "url": "https://www.linkedin.com/in/alberthuynh91/"
+            },
+            {
+                "network": "Github",
+                "username": "alberthuynh91",
+                "url": "https://github.com/alberthuynh91"
+            },
+            {
+                "network": "Stackoverflow",
+                "username": "bert",
+                "url": "https://stackoverflow.com/users/1744406/bert"
+            },
+            {
+                "network": "Spotify",
+                "username": "121636440",
+                "url": "https://open.spotify.com/user/121636440"
+            },
+            {
+                "network": "Soundcloud",
+                "username": "bertsears",
+                "url": "https://soundcloud.com/bertsears"
+            },
+            {
+                "network": "Car",
+                "username": "wavyzenki",
+                "url": "http://wavyzenki.com/"
             }
         ]
     },
     "work": [
         {
-            "company": "<COMPANY_NAME>",
-            "position": "<POSITION>",
-            "website": "<COMPANY_WEBSITE>",
-            "startDate": "<START_DATE>",
-            "endDate": "<END_DATE>",
-            "summary": "<SUMMARY>",
+            "company": "Fanatics",
+            "position": "Software Engineer",
+            "website": "https://www.fanatics.com/",
+            "startDate": "June 15, 2016",
+            "endDate": "Present",
+            "summary": "San Mateo, CA",
             "highlights": [
-                "<HIGHTLIGHT_1>",
-                "<HIGHTLIGHT_2>",
-                "<HIGHTLIGHT_3>"
+                "Built Fanatics Promo Tool used in creating new promotions for Fanatics.com e-commerce site",
+                "Implemented various features on Fanatics Internal Tool from end to end including features used in Experimentation and Content Editor",
+                "Technologies I worked with: React, NodeJS, Redux, Mobx, Elasticsearch, Golang, MySQL, AWS"
+            ]
+        },
+        {
+            "company": "Nexstra",
+            "position": "Software Engineer",
+            "website": "http://www.nexstra.com/",
+            "startDate": "July 12, 2014",
+            "endDate": "January, 5 2016",
+            "summary": "Danville, CA",
+            "highlights": [
+                "Created modular HTML templates that are clear, concise, and scalable reducing the complexity of processes in campaigns",
+                "Utilized version control with codebase keeping code safe and maintainable",
+                "Created SQL queries allowing for data retrieval for use in application",
+                "Technologies I worked with: HTML, CSS, MySQL, Git"
             ]
         }
     ],
@@ -58,13 +101,27 @@
     ],
     "education": [
         {
-            "institution": "<INSTITUTION_NAME>",
-            "area": "<AREA_OF_STUDY>",
+            "institution": "California State University, East Bay",
+            "area": "Bachelor of Science (BS), Computer Science",
             "studyType": "<STUDY_TYPE>",
-            "startDate": "<START_DATE>",
-            "endDate": "<END_DATE>",
+            "startDate": "September 20, 2009",
+            "endDate": "June 20, 2013",
             "gpa": "<GRADE_POINT_AVERAGE>",
-            "summary": "<SUMMARY>",
+            "summary": "Hayward, CA",
+            "courses": [
+                "<COURSE_1>",
+                "<COURSE_2>",
+                "<COURSE_3>"
+            ]
+        },
+        {
+            "institution": "Hack Reactor",
+            "area": "Computer Software Engineering",
+            "studyType": "<STUDY_TYPE>",
+            "startDate": "January 20, 2016",
+            "endDate": "April 20, 2016",
+            "gpa": "<GRADE_POINT_AVERAGE>",
+            "summary": "San Francisco, CA",
             "courses": [
                 "<COURSE_1>",
                 "<COURSE_2>",
@@ -82,39 +139,115 @@
     ],
     "projects": [
         {
-            "name": "<PUBLICATION_NAME>",
+            "name": "Wheelchimp",
             "publisher": "<PUBLISHER>",
-            "category": "<CATEGORY>",
-            "releaseDate": "<RELEASE_DATE>",
-            "website": "<WEBSITE>",
-            "summary": "<SUMMARY>",
+            "category": "Web Application",
+            "releaseDate": "Jan 2018",
+            "website": "https://www.wheelchimp.com/",
+            "summary": "A marketplace to buy and sell automotive wheels",
             "image": {
-                "modal": "<MODAL_IMAGE>",
-                "thumb": "<THUMBNAIL_IMAGE>"
+                "modal": "https://c1.staticflickr.com/1/431/30925898593_34d9a7f101_b.jpg",
+                "thumb": "https://c1.staticflickr.com/1/431/30925898593_34d9a7f101_b.jpg"
             },
             "keywords": [
-                "<KEYWORD_1>",
-                "<KEYWORD_2>",
-                "<KEYWORD_3>"
+                "ReactJS",
+                "NodeJS"
+            ]
+        },
+        {
+            "name": "Who Sampled Playlist",
+            "publisher": "<PUBLISHER>",
+            "category": "Web Application",
+            "releaseDate": "Mar 2018",
+            "website": "https://who-sampled-playlist.herokuapp.com/",
+            "summary": "Discover the good stuff! Create playlists of music that your favorite artist has sampled from!",
+            "image": {
+                "modal": "https://c1.staticflickr.com/5/4618/40488521381_d1274843e8_z.jpg",
+                "thumb": "https://c1.staticflickr.com/5/4618/40488521381_d1274843e8_z.jpg"
+            },
+            "keywords": [
+                "ReactJS",
+                "react-redux",
+                "NodeJS"
+            ]
+        },
+        {
+            "name": "GitSpy",
+            "publisher": "<PUBLISHER>",
+            "category": "Web Application",
+            "releaseDate": "Apr 2016",
+            "website": "http://www.gitspy.com/",
+            "summary": "GitSpy gives your developer team a real-time view of what everyone is working on, before they've even pushed their work to GitHub. Communicate better and anticipate merge conflicts before they happen.",
+            "image": {
+                "modal": "https://c2.staticflickr.com/2/1476/25342880284_b01b8ace11_o.jpg",
+                "thumb": "https://c2.staticflickr.com/2/1476/25342880284_b01b8ace11_o.jpg"
+            },
+            "keywords": [
+                "AngularJS",
+                "NodeJS"
             ]
         }
     ],
     "skills": [
         {
-            "title": "<DESCRIPTION_TITLE>",
+            "title": "Programming Languages",
             "description": [
-                "<DESCRIPTION_1>",
-                "<DESCRIPTION_2>",
-                "<DESCRIPTION_3>"
+                "Worked primarily with languages used in web techonologies like JavaScript and Golang, with frameworks such as Express.js and React.js"
             ],
             "skillDetails": [
                 {
-                    "name": "<SKILL_NAME>",
-                    "level": "<SKILL_LEVEL>",
+                    "name": "Javascript",
+                    "level": "90",
                     "keywords": [
-                        "<KEYWORD_1>",
-                        "<KEYWORD_2>",
-                        "<KEYWORD_3>"
+                        "javascript"
+                    ]
+                },
+                {
+                    "name": "ReactJS",
+                    "level": "90",
+                    "keywords": [
+                        "react",
+                        "reactjs"
+                    ]
+                },
+                {
+                    "name": "AngularJS",
+                    "level": "60",
+                    "keywords": [
+                        "angular",
+                        "angularjs"
+                    ]
+                },
+                {
+                    "name": "Redux",
+                    "level": "75",
+                    "keywords": [
+                        "react-redux",
+                        "redux"
+                    ]
+                },
+                {
+                    "name": "MobX",
+                    "level": "75",
+                    "keywords": [
+                        "mobx"
+                    ]
+                },
+                {
+                    "name": "HTML",
+                    "level": "90",
+                    "keywords": [
+                        "html",
+                        "html5"
+                    ]
+                },
+                {
+                    "name": "CSS",
+                    "level": "80",
+                    "keywords": [
+                        "css",
+                        "css3",
+                        "sass"
                     ]
                 }
             ]
@@ -122,13 +255,21 @@
     ],
     "languages": [
         {
-            "name": "<LANGUAGE_NAME>",
-            "level": "<LANGUAGE_LEVEL>"
+            "name": "Javascript",
+            "level": "90"
         }
     ],
     "interests": [
         {
-            "name": "<INTEREST_NAME>",
+            "name": "Music",
+            "keywords": [
+                "<KEYWORD_1>",
+                "<KEYWORD_2>",
+                "<KEYWORD_3>"
+            ]
+        },
+        {
+            "name": "Cars",
             "keywords": [
                 "<KEYWORD_1>",
                 "<KEYWORD_2>",
@@ -138,10 +279,10 @@
     ],
     "references": [
         {
-            "name": "<REFERENCE_NAME>",
-            "position": "<POSITION>",
-            "company": "<COMPANY>",
-            "reference": "<SUMMARY>"
+            "name": "Alice Yu",
+            "position": "Software Engineer",
+            "company": "Slack",
+            "reference": "I loved working with Albert. What stood out to me was that Albert has great taste, whether that pertains to mobile styling or code clarity. It seems to physically bother him when something is janky, ugly, or otherwise a bad experience for users or developers. Albert is also a very honest and empathic communicator who cares a lot about the work and how everyone on the team is doing. He is generous with feedback and encourages an open and trusting culture. Finally, he’s a sharp and intuitive engineer who is not afraid to tackle any part of the stack or dive into unfamiliar waters. I’d jump at the opportunity to work with him again."
         }
     ]
 }

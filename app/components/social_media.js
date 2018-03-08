@@ -12,6 +12,10 @@ function mapIcon(socialMedia) {
             return (
                 <i className={'fa fa-envelope'}/>
             );
+        case 'Soundcloud':
+            return (
+                <i className='fa fa-soundcloud' aria-hidden='true'/>
+            );
         case 'quora':
             return (
                 <i className='fa fa-fw'>
