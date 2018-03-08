@@ -159,7 +159,7 @@
             "publisher": "<PUBLISHER>",
             "category": "Web Application",
             "releaseDate": "Mar 2018",
-            "website": "http://spotify.whatupbert.com/",
+            "website": "https://who-sampled-playlist.herokuapp.com/",
             "summary": "Discover the good stuff! Create playlists of music that your favorite artist has sampled from!",
             "image": {
                 "modal": "https://c1.staticflickr.com/5/4618/40488521381_d1274843e8_z.jpg",
