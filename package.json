@@ -1,25 +1,25 @@
 {
-  "name": "whatupbert.com",
+  "name": "Albert Huynh Resume",
   "private": true,
-  "description": "Albert Huynh personal site",
+  "description": "Albert Huynh Resume Page",
   "version": "1.2.2",
-  "homepage": "https://suddi.github.io",
+  "homepage": "http://yo.whatupbert.com",
   "author": {
     "name": "Albert Huynh",
     "email": "alberthuynh91@gmail.com",
-    "url": "https://whatupbert.com/"
+    "url": "http://yo.whatupbert.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alberthuynh91/suddi.github.io"
+    "url": "https://github.com/alberthuynh91/alberthuynh-personal"
   },
   "bugs": {
-    "url": "https://github.com/alberthuynh91/suddi.github.io/issues"
+    "url": "https://github.com/alberthuynh91/alberthuynh-personal/issues"
   },
   "licenses": [
     {
       "type": "Apache-2.0",
-      "url": "https://github.com/alberthuynh91/suddi.github.io/LICENSE"
+      "url": "https://github.com/alberthuynh91/alberthuynh-personal/LICENSE"
     }
   ],
   "scripts": {
