@@ -57,7 +57,7 @@
     "superagent": "^3.8.0",
     "webpack": "^3.0.0",
     "webpack-dev-server": "2.7.1",
-    "webpack-s3-plugin": "^0.9.0"
+    "webpack-s3-plugin": "^1.0.0"
   },
   "eslintConfig": {
     "extends": "suddi/frontend",
