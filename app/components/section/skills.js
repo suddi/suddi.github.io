@@ -39,9 +39,9 @@ const Entry = React.createClass({
             <li>
                 <span
                     className={`bar-expand percentage${this.props.entry.level}`}
+                    style={this.state.style}
                     onMouseEnter={this.handleMouseEnter}
-                    onMouseLeave={this.handleMouseLeave}
-                    style={this.state.style}/>
+                    onMouseLeave={this.handleMouseLeave}/>
                 <em>{this.props.entry.name}</em>
             </li>
         );

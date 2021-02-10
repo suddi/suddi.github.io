@@ -22,7 +22,7 @@ const Modal = React.createClass({
         };
 
         return (
-            <ReactModal className='popup-modal mfp-hide' isOpen={this.props.isOpen} onRequestClose={this.props.onRequestClose} style={style}>
+            <ReactModal className='popup-modal mfp-hide' style={style} isOpen={this.props.isOpen} onRequestClose={this.props.onRequestClose}>
                 <img
                     className='scale-with-grid'
                     src={this.props.entry.image.modal}
