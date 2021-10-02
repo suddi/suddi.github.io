@@ -20,6 +20,9 @@ The site has been shown as demo React.js project on the following sites:
 * [reactjsexample](https://reactjsexample.com/a-static-single-page-application-resume-builder-developed-using-react-js/)
 * [javascriptstuff](https://www.javascriptstuff.com/react-example-apps/#suddi)
 
+
+### Yes this is very helpful
+
 ## Installation
 
 ````sh
